@@ -118,7 +118,6 @@ header {
 
 .menu ul li::after {
     content: "│";
-    font-size:
 }
 
 .menu ul li:last-child::after {
