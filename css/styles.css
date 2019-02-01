@@ -185,10 +185,6 @@ header {
     left: -5px;
 }
 
-.principales-destinos {
-    background-color: lightgrey;
-}
-
 .hero-items {
     display: flex;
     justify-content: center;
@@ -211,4 +207,132 @@ header {
 
 .hero-items h3 {
     font-weight: 400;
+}
+
+.container-destinos {
+    background-color: #F5F4F5;
+    padding-bottom: 50px;
+}
+
+.principales-destinos {
+    max-width: 1124px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.principales-destinos h2 {
+    grid-column: 1 / span 3;
+    justify-self: center;
+    align-self: center;
+    margin: 50px 0  20px 0;
+}
+
+.principales-destinos div {
+    justify-self: center;
+    align-self: center;
+    position: relative;
+}
+
+.principales-destinos div:nth-of-type(1) {
+    grid-column: 1 / span 1;    
+}
+
+.principales-destinos div:nth-of-type(2) {
+    grid-column: 2 / span 1;    
+}
+
+.principales-destinos div:nth-of-type(3) {
+    grid-column: 3 / span 1;    
+}
+
+.principales-destinos div:nth-of-type(4) {
+    grid-column: 1 / span 1;    
+}
+
+.principales-destinos div:nth-of-type(5) {
+    grid-column: 2 / span 1;    
+}
+
+.principales-destinos div:nth-of-type(6) {
+    grid-column: 3 / span 1;    
+}
+
+.principales-destinos div h3 {
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+    color: white;
+    max-width: 55%;
+}
+
+.listado-container {
+    background-color: #30664E;
+}
+
+.listado {
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1124px;
+    margin: 0 auto;
+}
+
+.listado h2 {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.listado a {
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    color: #24B27C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.container-actividades {
+    background-color: #F5F4F5;
+    padding-bottom: 50px;
+}
+
+.actividades-destacadas {
+    max-width: 1124px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.actividades-destacadas h2 {
+    grid-column: 1 / span 3;
+    justify-self: center;
+    align-self: center;
+    margin: 50px 0 20px 0;
+    color: #30664E;
+}
+
+.actividades-item {
+    justify-self: center;
+    align-self: center;
+    position: relative;
+    background-color: #fff;
+}
+
+.actividades-item:nth-of-type(1) {
+    grid-column: 1 / span 1;
+}
+
+.actividades-item:nth-of-type(2) {
+    grid-column: 2 / span 1;
+}
+
+.actividades-item:nth-of-type(3) {
+    grid-column: 3 / span 1;
 }
