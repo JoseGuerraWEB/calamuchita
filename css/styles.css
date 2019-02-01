@@ -52,4 +52,125 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.container {
+    background-color: #30664E;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    color: white;
+    max-width: 1124px;
+    margin: 0 auto;
+}
+
+.logotipo {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logotipo img {
+    vertical-align: top;
+}
+
+.logotipo span {
+    font-size: 35px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul li {
+    list-style: none;
+    padding: 20px 0 20px 20px;
+}
+
+.menu ul li::after {
+    content: "│";
+    font-size:
+}
+
+.menu ul li:last-child::after {
+    display: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    padding-right: 20px;
+}
+
+/* BUG: Crear lineas de separacion */
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+}
+
+.formulario {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 42px;
+    padding: 2px;
+}
+
+#search {
+    background-color: #ffffff;
+    border-top-left-radius: 42px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 42px;
+    cursor: pointer;
+    color: black;
+    font-size: 15px;
+    padding: 25px 75px;
+    border: none;
+}
+
+#search::placeholder {
+    color: black;
+}
+
+#submit {
+    color: white;
+    background-color: #24B27C;
+    border-radius: 42px;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 20px 60px;
+    border: none;
+    display: inline-block;
+    margin-left: 2px;
+    position: relative;
+    left: -5px;
+}
+
+.principales-destinos {
+    background-color: lightgrey;
+}
+
+.hero-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1124px;
+    margin: 0 auto;
 }
