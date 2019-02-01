@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'icomoon';
-    src: url('/../fonts/icomoon.eot?uss4ri');
-    src: url('/../fonts/icomoon.eot?uss4ri#iefix') format('embedded-opentype'),
-        url('/../fonts/icomoon.ttf?uss4ri') format('truetype'),
-        url('/../fonts/icomoon.woff?uss4ri') format('woff'),
-        url('/../fonts/icomoon.svg?uss4ri#icomoon') format('svg');
+    src: url('/../fonts/icomoon.eot?uzuwo1');
+    src: url('/../fonts/icomoon.eot?uzuwo1#iefix') format('embedded-opentype'),
+        url('/../fonts/icomoon.ttf?uzuwo1') format('truetype'),
+        url('/../fonts/icomoon.woff?uzuwo1') format('woff'),
+        url('/../fonts/icomoon.svg?uzuwo1#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -33,6 +33,21 @@
     content: "\e901";
 }
 
+.icon-coin-dollar:before {
+    content: "\e93b";
+    color: #30664E;
+}
+
+.icon-envelop:before {
+    content: "\e945";
+    color: #30664E;
+}
+
+.icon-user-check:before {
+    content: "\e975";
+    color: #30664E;
+}
+
 .icon-star-empty:before {
     content: "\e9d7";
 }
@@ -45,9 +60,15 @@
     content: "\e9d9";
 }
 
+.icon-question:before {
+    content: "\ea09";
+    color: #30664E;
+}
+
 .icon-plus:before {
     content: "\ea0a";
 }
+
 
 
 body {
@@ -169,8 +190,25 @@ header {
 }
 
 .hero-items {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 1124px;
     margin: 0 auto;
+    height: 250px;
+}
+
+.hero-items div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-items i {
+    font-size: 35px;
+    margin: 15px;
+}
+
+.hero-items h3 {
+    font-weight: 400;
 }
