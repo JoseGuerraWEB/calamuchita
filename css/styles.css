@@ -905,6 +905,13 @@ header {
     background-color: #EFEFEF;
 }
 
+.alojamientos-destacados div:nth-child(1) .texto h2,
+.alojamientos-destacados div:nth-child(2) .texto h2,
+.alojamientos-destacados div:nth-child(3) .texto h2,
+.alojamientos-destacados div:nth-child(4) .texto h2 {
+    color: white;
+}
+
 .alojamientos-destacados div:nth-child(6) .texto h2,
 .alojamientos-destacados div:nth-child(7) .texto h2,
 .alojamientos-destacados div:nth-child(8) .texto h2,
