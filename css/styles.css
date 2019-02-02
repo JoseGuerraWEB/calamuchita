@@ -754,7 +754,7 @@ header {
 
 .alojamientos-santa-rosa-de-calamuchita {
     display: grid;
-    grid-template-columns: .75fr 1.25fr;
+    grid-template-columns: .6fr 1.4fr;
     max-width: 1124px;
     margin: 0 auto 100px;
     grid-gap: 60px;
@@ -839,3 +839,85 @@ header {
 .breadcrumbs a:nth-of-type(2)::after {
     content: ">";
 }
+
+.alojamientos-destacados-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    height: 150px;
+}
+
+.alojamientos-destacados-items .texto h2 {
+    font-size: 20px;
+}
+
+.alojamientos-destacados-items .imagen {
+    width: 40%;
+    height: 100%;
+    position: relative;
+    background-image: url("https://lorempixel.com/1920/1080/animals");
+    background-size: cover;
+    background-position: center;
+}
+
+.alojamientos-destacados-items .texto {
+    width: 60%;
+    height: 100%;
+    padding: 0 0 0 20px;
+    background-color: #24B27C;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.alojamientos-destacados-items .texto h2, 
+.alojamientos-destacados-items .texto p {
+    margin: 0;
+    padding: 5px;
+}
+
+.alojamientos-destacados-items .imagen p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 15px;
+    background-color: #30664E;
+    color: white;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.alojamientos-destacados-items .texto p:nth-of-type(3) {
+    font-size: 12px;
+    border: 1px solid white;
+    margin: 5px;
+}
+
+.alojamientos-destacados div:nth-child(6) .texto,
+.alojamientos-destacados div:nth-child(7) .texto,
+.alojamientos-destacados div:nth-child(8) .texto,
+.alojamientos-destacados div:nth-child(9) .texto,
+.alojamientos-destacados div:nth-child(10) .texto {
+    background-color: #EFEFEF;
+}
+
+.alojamientos-destacados div:nth-child(6) .texto h2,
+.alojamientos-destacados div:nth-child(7) .texto h2,
+.alojamientos-destacados div:nth-child(8) .texto h2,
+.alojamientos-destacados div:nth-child(9) .texto h2,
+.alojamientos-destacados div:nth-child(10) .texto h2 {
+    color: #30664E;
+}
+
+.alojamientos-destacados div:nth-child(6) .texto p,
+.alojamientos-destacados div:nth-child(7) .texto p,
+.alojamientos-destacados div:nth-child(8) .texto p,
+.alojamientos-destacados div:nth-child(9) .texto p,
+.alojamientos-destacados div:nth-child(10) .texto p {
+    color: #666666;
+}
+
