@@ -2966,3 +2966,27 @@ header {
 .alojamiento-servicios h2 {
     grid-column: 1 / span 4;
 }
+
+.alojamiento-opiniones {
+    max-width: 1124px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.alojamiento-opiniones-items {
+    background-color: #30664E;
+    color: white;
+    padding: 30px;
+}
+
+.alojamiento-opiniones-items h3,
+.alojamiento-opiniones-items p:nth-child(2) {
+    display: inline-block;
+    font-weight: 400;
+}
+
+.alojamiento-opiniones-items h3 {
+    margin-right: 10px;
+}
