@@ -563,3 +563,39 @@ header {
 .hero-localidades-items div a h3 {
     font-weight: 400;
 }
+
+.santa-rosa-de-calamuchita {
+    display: grid;
+    max-width: 1124px;
+    margin: 0 auto;
+    grid-template-columns: .75fr 1.25fr;
+    grid-gap: 60px;
+}
+
+.santa-rosa-de-calamuchita div:nth-of-type(1) {
+    grid-column: 1 / span 2;
+    margin: 25px 0 75px;
+}
+
+/* FIXME: COLOCAR LAS MIGAS DE PAN EN LA SEGUNDA COLUMNA */
+
+.santa-rosa-de-calamuchita div:nth-of-type(1) a {
+    text-decoration: none;
+    color: #30664E;
+}
+
+.santa-rosa-de-calamuchita div:nth-of-type(1) a:first-child::after {
+    content: ">";
+}
+
+.santa-rosa-de-calamuchita:nth-of-type(2) {
+    grid-column: 1 / span 1;
+}
+
+.santa-rosa-de-calamuchita:nth-of-type(2) {
+    grid-column: 1 / span 1;
+}
+
+.santa-rosa-de-calamuchita:nth-of-type(3) {
+    grid-column: 2 / span 1;
+}
