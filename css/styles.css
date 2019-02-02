@@ -840,6 +840,10 @@ header {
     content: ">";
 }
 
+.breadcrumbs a:nth-of-type(3)::after {
+    content: ">";
+}
+
 .alojamientos-destacados-items {
     display: flex;
     justify-content: center;
@@ -879,7 +883,8 @@ header {
     padding: 5px;
 }
 
-.alojamientos-destacados-items .imagen p {
+.alojamientos-destacados-items .imagen p,
+.alojamiento-cabana-y-apart .imagen p {
     position: absolute;
     top: 0;
     left: 0;
@@ -928,3 +933,110 @@ header {
     color: #666666;
 }
 
+/* ALOJAMIENTO ADENTRO */
+
+.alojamiento-cabana-y-apart-container {
+    background-color: #EFEFEF;
+    padding: 100px 0;
+}
+
+.alojamiento-cabana-y-apart {
+    max-width: 1124px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.25fr .75fr;
+    grid-gap: 60px;
+}
+
+.alojamiento-cabana-y-apart div:nth-of-type(2),
+.alojamiento-cabana-y-apart div:nth-of-type(3) {
+    justify-self: center;
+    align-self: center;
+}
+
+.alojamiento-cabana-y-apart .breadcrumbs {
+    grid-column: 1 / span 2;
+}
+
+.alojamiento-cabana-y-apart .breadcrumbs a {
+    margin: 0;
+}
+
+.alojamiento-cabana-y-apart .imagen {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.alojamiento-cabana-y-apart .texto {
+    width: 100%;
+    height: 100%;
+    color: #666666;
+}
+
+.alojamiento-cabana-y-apart .texto a h1 {
+    font-size: 2.5em;
+    color: #666666;
+}
+
+.alojamiento-cabana-y-apart .texto div {
+    border-top: 1px solid #666666;
+    padding: 20px 0;
+}
+
+.myButton {
+    background-color: #30664E;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    padding: 15px;
+    text-decoration: none;
+    margin: 5px;
+    border: none;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+.alojamiento-consulta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1124px;
+    margin: 50px auto;
+    grid-gap: 50px;
+}
+
+.alojamiento-consulta-imagenes {
+    grid-column: 1 / span 1;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.alojamiento-consulta-formulario {
+    grid-column: 2 / span 1;
+    color: #666666;
+}
+
+.alojamiento-consulta-formulario p {
+    margin-top: 0;
+}
+
+.alojamiento-consulta-formulario input[type=text],
+.alojamiento-consulta-formulario input[type=email] {
+    background-color: #EFEFEF;
+    color: #666666;
+    padding: 15px;
+    display: block;
+    width: 100%;
+    border: none;
+    margin: 10px 0;
+}
+
+.alojamiento-consulta-formulario input[type=submit] {
+    margin: 10px 0;
+}
