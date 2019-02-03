@@ -839,6 +839,11 @@ a {
     grid-gap: 60px;
 }
 
+ .alojamientos-santa-rosa-de-calamuchita .breadcrumbs {
+     grid-column: 1 / span 2;
+     text-align: center;
+ }
+
 .filtro {
     grid-column: 1 / span 1;
     margin-top: 50px;
@@ -1646,6 +1651,10 @@ body>main>div.alojamientos-destacados>div:nth-child(10)>div.texto>a>h2 {
 
     .alojamiento-opiniones-items {
         grid-column: 1 / span 3;
+    }
+
+    .alojamientos-santa-rosa-de-calamuchita div {
+        grid-column: 1 / span 2;
     }
 
 }
