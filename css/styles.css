@@ -3085,6 +3085,11 @@ header {
     margin: 0;
 }
 
+.actividades-dentro-texto-seo div:nth-of-type(1) p {
+    padding-bottom: 16px;
+    border-bottom: 1px solid white;
+}
+
 .actividades-dentro-texto-seo div:nth-of-type(1) a {
     margin: 16px 0;
     display: block;
@@ -3094,4 +3099,60 @@ header {
 .actividades-dentro-texto-seo div:nth-of-type(2) {
     color: #666666;
     font-size: 20px;
+}
+
+.actividades-recomendadas-container {
+    background-color: #EFEFEF;
+}
+
+.actividades-recomendadas {
+    max-width: 1124px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px 0;
+    grid-gap: 15px;
+}
+
+.actividades-recomendadas img {
+    vertical-align: top;
+}
+.actividades-recomendadas h2 {
+    grid-column: 1 / span 3;
+    margin: 0 0 50px;
+    justify-self: center;
+    align-self: center;
+    color: #30664E;
+    font-size: 2em;
+}
+
+.actividades-recomendadas div {
+    background-color: #24B27C;
+    color: white;
+    justify-self: center;
+    align-self: center;
+}
+
+.actividades-recomendadas div div {
+    padding: 30px;
+}
+
+.actividades-recomendadas-container div div p:nth-child(2) {
+    font-size: 14px;
+}
+
+.actividades-recomendadas-container div div p:nth-child(3),
+.actividades-recomendadas-container div div p:nth-child(4) {
+    display: inline-block;
+    font-size: 14px;
+}
+
+.actividades-recomendadas-container div div p:nth-child(3) {
+    margin-right: 15px;
+}
+
+.actividades-recomendadas div h3 {
+    background-color: #24B27C;
+    margin: 0;
+    white-space: nowrap;
 }
