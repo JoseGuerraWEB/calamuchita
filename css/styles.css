@@ -784,7 +784,7 @@ a {
 
 .hero-alojamientos-portada h1 {
     max-width: 1124px;
-    margin: 0 auto; 
+    margin: 0 auto;
     position: relative;
     top: 50%;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.43);
@@ -805,6 +805,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 30px;
 }
 
 .hero-alojamientos-datos div h2:nth-of-type(1) {
@@ -904,9 +905,12 @@ a {
     grid-column: 2 / span 1;
 }
 
+.breadcrumbs {
+    margin: 50px 0;
+}
+
 .breadcrumbs a {
     display: inline-block;
-    margin: 50px 0;
     color: #30664E;
     font-weight: 700;
 }
@@ -929,7 +933,7 @@ a {
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-    height: 150px;
+    height: 200px;
 }
 
 .alojamientos-destacados-items .texto h2,
@@ -1028,11 +1032,24 @@ a {
     color: #666666;
 }
 
+.texto-seo {
+    text-align: center;
+    padding: 30px;
+}
+
 .texto-seo,
 .actividades-texto-seo {
     max-width: 1124px;
     margin: 100px auto;
 }
+
+body>main>div.alojamientos-destacados>div:nth-child(6)>div.texto>a>h2,
+body>main>div.alojamientos-destacados>div:nth-child(7)>div.texto>a>h2,
+body>main>div.alojamientos-destacados>div:nth-child(8)>div.texto>a>h2,
+body>main>div.alojamientos-destacados>div:nth-child(9)>div.texto>a>h2,
+body>main>div.alojamientos-destacados>div:nth-child(10)>div.texto>a>h2 {
+     color: #666666;
+ }
 
 /* ALOJAMIENTO ADENTRO */
 
@@ -1572,6 +1589,30 @@ a {
     .ideas div:nth-of-type(2),
     .ideas div:nth-of-type(3) {
         grid-column: 1 / span 1;
+    }
+
+    .hero-alojamientos, .hero-alojamientos-datos {
+        height: auto;
+        text-align: center;
+    }
+
+    .hero-alojamientos-datos div {
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: center;
+    }
+
+    .hero-alojamientos-datos div h2:nth-of-type(1) {
+        border: none;
+        padding: 50px 10px;
+    }
+
+    .alojamientos-santa-rosa-de-calamuchita {
+        padding: 30px;
+    }
+
+    .alojamientos-destacados-items {
+        height: 200px;
     }
 }
 
