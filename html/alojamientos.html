@@ -10,15 +10,24 @@
 </head>
 
 <body>
-    <section class="container">
-        <header>
+    <section class="header-container">
+        <header class="header">
             <figure class="logotipo">
                 <a href="../index.html">
-                    <img src="../images/logotipo.png" alt="Logotipo Calamuchita" srcset="" width="250">
+                    <img src="../images/logotipo.png" alt="Logotipo Calamuchita" srcset="" width="200">
                 </a>
             </figure>
-            <nav class="menu">
+            <span class="burguer-button icon-menu" id="burguer-button"></span>
+            <nav class="menu" id="menu">
                 <ul>
+                    <li>
+                        <form action="">
+                            <div class="formulario-header">
+                                <input type="search" name="search" id="search" placeholder="¿Dónde vamos?">
+                                <input type="submit" value="Buscar" id="submit">
+                            </div>
+                        </form>
+                    </li>
                     <li>
                         <a href="localidades.html">Localidades</a>
                     </li>
@@ -251,7 +260,7 @@
             <div class="footer-item">
                 <h4>Soporte</h4>
                 <a href="">Preguntas frecuentes</a>
-                <a href="">Contacto</a>
+                <a href="contacto.html">Contacto</a>
             </div>
             <div class="footer-item">
                 <h4>Redes</h4>
@@ -260,9 +269,10 @@
             </div>
             <div class="footer-item">
                 <h4>Soporte</h4>
-                <a href="">Quiénes somos?</a>
-                <a href="">Para conocer más a cerca de MásCalamuchita o para despejar dudas contáctese con nosotros:</a>
-                <a href="">info@mascalamuchita.com.ar</a>
+                <a href="contacto.html">Quiénes somos?</a>
+                <a href="contacto.html">Para conocer más a cerca de MásCalamuchita o para despejar dudas
+                    contáctese con nosotros:</a>
+                <a href="mailto:info@mascalamuchita.com.ar">info@mascalamuchita.com.ar</a>
             </div>
         </div>
     </footer>
