@@ -1666,10 +1666,20 @@ body>main>div.alojamientos-destacados>div:nth-child(10)>div.texto>a>h2 {
         grid-column: 1 / span 3;
     }
 
-    .alojamientos-santa-rosa-de-calamuchita div {
+    .alojamientos-santa-rosa-de-calamuchita div,
+    .actividades-santa-rosa-de-calamuchita .filtro,
+    .actividades-santa-rosa-de-calamuchita .actividades-destacados {
         grid-column: 1 / span 2;
     }
 
+    .actividades-santa-rosa-de-calamuchita {
+        padding: 30px;
+    }
+
+    .actividades-texto-seo {
+        padding: 30px;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 500px) {
