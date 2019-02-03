@@ -2081,6 +2081,7 @@ header {
     background-color: #fff;
     border-radius: 42px;
     padding: 2px;
+    white-space: nowrap;
 }
 
 #search {
@@ -2094,7 +2095,11 @@ header {
     padding: 25px 75px;
 }
 
-#search::placeholder {
+*::placeholder {
+    font-weight: 700;
+}
+
+#search {
     color: black;
 }
 
@@ -2144,7 +2149,7 @@ header {
 }
 
 .hero-items h3 {
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .container-destinos {
@@ -2220,7 +2225,7 @@ header {
 
 .listado h2 {
     color: #ffffff;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .listado a {
@@ -2480,7 +2485,7 @@ header {
 }
 
 .hero-localidades-items div a h3 {
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .santa-rosa-de-calamuchita {
@@ -2499,7 +2504,7 @@ header {
 
 .santa-rosa-de-calamuchita div:nth-of-type(1) a {
     color: #30664E;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .santa-rosa-de-calamuchita div:nth-of-type(1) a:first-child::after {
@@ -2533,7 +2538,7 @@ header {
 
 .ideas-container {
     background-color: #F5F4F5;
-    height: 400px;
+    height: 300px;
     padding: 75px 0;
 }
 
@@ -2644,7 +2649,7 @@ header {
 }
 
 .hero-alojamientos-datos div h2:nth-of-type(1) {
-    font-weight: 400;
+    font-weight: 300;
     border-right: 1px solid white;
     margin: 0;
     padding: 3% 10% 3% 0;
@@ -2662,7 +2667,7 @@ header {
 .hero-alojamientos-datos div h2:nth-of-type(3) span,
 .hero-alojamientos-datos div h2:nth-of-type(4) span {
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .alojamientos-santa-rosa-de-calamuchita,
@@ -2744,7 +2749,7 @@ header {
     display: inline-block;
     margin: 50px 0;
     color: #30664E;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .breadcrumbs a:nth-of-type(1)::after {
@@ -2815,7 +2820,7 @@ header {
     background-color: #30664E;
     color: white;
     padding: 10px;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 14px;
 }
 
@@ -2934,10 +2939,11 @@ header {
     color: #ffffff;
     font-family: Arial;
     font-size: 15px;
-    padding: 15px;
+    padding: 15px 30px;
     text-decoration: none;
     margin: 5px;
     border: none;
+    font-weight: 700;
 }
 
 .myButton:active {
@@ -2959,9 +2965,11 @@ header {
     grid-template: repeat(3, 1fr) / repeat(3, 1fr);
     grid-gap: 10px;
 }
+
 .alojamiento-consulta-formulario {
     grid-column: 2 / span 1;
 }
+
 .alojamiento-consulta-formulario,
 .formulario-contacto-container {
     color: #666666;
@@ -2982,11 +2990,16 @@ header {
     width: 100%;
     border: none;
     margin: 10px 0;
+    outline: none;
 }
 
 .alojamiento-consulta-formulario input[type=submit],
 .formulario-contacto-container input[type=submit] {
     margin: 10px 0;
+}
+
+#consulta {
+    padding-bottom: 200px;
 }
 
 .alojamiento-servicios-container {
@@ -3023,7 +3036,7 @@ header {
 .alojamiento-opiniones-items h3,
 .alojamiento-opiniones-items p:nth-child(2) {
     display: inline-block;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .alojamiento-opiniones-items h3 {
@@ -3126,6 +3139,7 @@ header {
 .actividades-recomendadas img {
     vertical-align: top;
 }
+
 .actividades-recomendadas h2 {
     grid-column: 1 / span 3;
     margin: 0 0 50px;
@@ -3187,14 +3201,34 @@ header {
 .hero-contacto-items h2 {
     color: #666666;
     font-size: 1.2em;
-    font-weight: 400;
+    font-weight: 300;
     padding: 0 15% 50px;
     margin: 0;
 }
 
+
 .formulario-contacto {
     max-width: 1124px;
     margin: 50px auto;
+}
+
+.formulario-contacto-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px;
+    text-align: center;
+}
+
+.formulario-contacto-container p {
+    margin-top: 50px;
+}
+
+.formulario-contacto-container a {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #30664E;
 }
 
 /* BUG: EL INPUT DE CONSULTA TIENES QUE HACERLO MAS GRANDE Y QUE VALGA TANTO PARA EL OTRO FORUMULARIO COMO PA ESTE */
