@@ -350,7 +350,7 @@ a {
     grid-column: 1 / span 1;
 }
 
-.principales-destinos div:nth-of-type(2), 
+.principales-destinos div:nth-of-type(2),
 .principales-destinos div:nth-of-type(5) {
     grid-column: 2 / span 1;
 }
@@ -600,29 +600,26 @@ a {
 
 .hero-localidades {
     background-color: #F5F4F5;
-    position: relative;
 }
 
 .hero-localidades img {
     width: 100%;
+    position: relative;
 }
 
 .hero-localidades-title {
     position: absolute;
     left: 50%;
-    top: 35%;
+    top: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     color: white;
     text-align: center;
-    font-size: 3em;
+    font-size: 3vw;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.43);
+    height: 60%;
 }
 
-.hero-localidades-title p {
-    position: relative;
-    top: 70px;
-}
 
 .hero-localidades-items {
     max-width: 1124px;
@@ -637,10 +634,12 @@ a {
 
 .hero-localidades-items div a {
     color: #30664E;
+    display: inline-block;
+    padding: 30px 10px;
 }
 
 .hero-localidades-items div a i {
-    font-size: 75px;
+    font-size: 6vw;
 }
 
 .hero-localidades-items div a h3 {
@@ -1397,11 +1396,11 @@ a {
         justify-content: center;
         height: 75px;
     }
-    
+
     .logotipo {
         margin: 0;
     }
-    
+
     .menu {
         position: fixed;
         left: 0;
@@ -1412,7 +1411,7 @@ a {
         z-index: 1;
         display: none;
     }
-    
+
     .menu.active {
         transition: .4s;
         display: flex;
@@ -1431,19 +1430,20 @@ a {
 
     .menu ul li {
         border-right: none;
-        border-bottom: 1px solid white; 
+        border-bottom: 1px solid white;
         width: 60%;
         text-align: center;
         padding: 35px;
     }
+
     .menu ul li #search {
         border-top-right-radius: 42px;
         border-bottom-right-radius: 42px;
         padding: 20px 60px;
     }
 
-     .menu ul li #search,
-     .menu ul li #submit {
+    .menu ul li #search,
+    .menu ul li #submit {
         margin: 10px;
         text-align: center;
     }
@@ -1477,12 +1477,13 @@ a {
         cursor: pointer;
     }
 
-    
+
     .hero-items {
         height: auto;
     }
 
-    .hero-items, .hero-items div {
+    .hero-items,
+    .hero-items div {
         flex-wrap: wrap;
         margin: 30px;
         text-align: center;
@@ -1490,6 +1491,7 @@ a {
 }
 
 @media screen and (max-width:768px) {
+
     .principales-destinos,
     .actividades-destacadas,
     .alojamientos,
@@ -1551,6 +1553,24 @@ a {
         grid-column: -1;
         padding: 20px;
     }
+
+    .ideas-container {
+        height: auto;
+    }
+
+    .ideas div p:nth-of-type(1) {
+        left: 0;
+    }
+
+    .ideas {
+        grid-template-columns: 1fr;
+    }
+
+    .ideas div:nth-of-type(1),
+    .ideas div:nth-of-type(2),
+    .ideas div:nth-of-type(3) {
+        grid-column: 1 / span 1;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -1558,6 +1578,7 @@ a {
         padding: 20px;
         width: 100%;
     }
+
     .menu ul li #search {
         margin: 5px;
         padding: 20px 14px;
@@ -1565,5 +1586,15 @@ a {
 
     .menu ul li #submit {
         padding: 20px 30px;
+    }
+
+    .hero-localidades-items {
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: center;
+    }
+
+    .santa-rosa-de-calamuchita div:nth-of-type(1) {
+        margin-bottom: 0;
     }
 }
