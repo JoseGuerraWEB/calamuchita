@@ -175,7 +175,7 @@ a {
 }
 
 .logotipo {
-    margin: 0;
+    margin: 0 0 0 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -189,10 +189,18 @@ a {
     font-size: 35px;
 }
 
+.header span {
+    display: none;
+}
+
 .menu ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.menu ul li:first-child {
+    display: none;
 }
 
 .menu ul li {
@@ -212,9 +220,9 @@ a {
     padding-right: 20px;
 }
 
- .menu ul li:nth-child(5) a:nth-child(1) {
-     padding-right: 10px;
- }
+.menu ul li:nth-child(5) a:nth-child(1) {
+    padding-right: 10px;
+}
 
 /* HERO */
 
@@ -230,7 +238,7 @@ a {
     border-bottom-right-radius: 40%;
 }
 
-.formulario {
+.hero .formulario {
     position: absolute;
     left: 50%;
     top: 40%;
@@ -328,6 +336,7 @@ a {
     justify-self: center;
     align-self: center;
     margin: 50px 0 20px;
+    color: #30664E;
 }
 
 .principales-destinos div {
@@ -336,33 +345,24 @@ a {
     position: relative;
 }
 
-.principales-destinos div:nth-of-type(1) {
-    grid-column: 1 / span 1;
-}
-
-.principales-destinos div:nth-of-type(2) {
-    grid-column: 2 / span 1;
-}
-
-.principales-destinos div:nth-of-type(3) {
-    grid-column: 3 / span 1;
-}
-
+.principales-destinos div:nth-of-type(1),
 .principales-destinos div:nth-of-type(4) {
     grid-column: 1 / span 1;
 }
 
+.principales-destinos div:nth-of-type(2), 
 .principales-destinos div:nth-of-type(5) {
     grid-column: 2 / span 1;
 }
 
+.principales-destinos div:nth-of-type(3),
 .principales-destinos div:nth-of-type(6) {
     grid-column: 3 / span 1;
 }
 
 .principales-destinos div h3 {
     position: absolute;
-    bottom: 12%;
+    bottom: 5%;
     left: 5%;
     color: white;
     max-width: 55%;
@@ -379,6 +379,7 @@ a {
     align-items: center;
     max-width: 1124px;
     margin: 0 auto;
+    padding: 40px;
 }
 
 .listado h2 {
@@ -414,7 +415,7 @@ a {
     grid-column: 1 / span 3;
     justify-self: center;
     align-self: center;
-    margin: 50px 0 20px;
+    /* margin: 50px 0 20px; */
     color: #30664E;
 }
 
@@ -1389,4 +1390,180 @@ a {
     color: #30664E;
 }
 
-/* BUG: EL INPUT DE CONSULTA TIENES QUE HACERLO MAS GRANDE Y QUE VALGA TANTO PARA EL OTRO FORUMULARIO COMO PA ESTE */
+/* RESPONSIVE */
+
+@media screen and (max-width: 1024px) {
+    .header {
+        justify-content: center;
+        height: 75px;
+    }
+    
+    .logotipo {
+        margin: 0;
+    }
+    
+    .menu {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, .8);
+        z-index: 1;
+        display: none;
+    }
+    
+    .menu.active {
+        transition: .4s;
+        display: flex;
+    }
+
+    .menu ul {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu ul li {
+        border-right: none;
+        border-bottom: 1px solid white; 
+        width: 60%;
+        text-align: center;
+        padding: 35px;
+    }
+    .menu ul li #search {
+        border-top-right-radius: 42px;
+        border-bottom-right-radius: 42px;
+        padding: 20px 60px;
+    }
+
+     .menu ul li #search,
+     .menu ul li #submit {
+        margin: 10px;
+        text-align: center;
+    }
+
+    .menu.active {
+        left: 0;
+    }
+
+    .menu ul li:first-child {
+        display: inline-block;
+    }
+
+    .hero .formulario {
+        display: none;
+    }
+
+    #burguer-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 5%;
+        right: 5%;
+        width: 50px;
+        height: 50px;
+        background-color: #30664E;
+        font-size: 20px;
+        border-radius: 50%;
+        z-index: 2;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        cursor: pointer;
+    }
+
+    
+    .hero-items {
+        height: auto;
+    }
+
+    .hero-items, .hero-items div {
+        flex-wrap: wrap;
+        margin: 30px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .principales-destinos,
+    .actividades-destacadas,
+    .alojamientos,
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px 0;
+    }
+
+    .principales-destinos div:nth-of-type(1),
+    .principales-destinos div:nth-of-type(2),
+    .principales-destinos div:nth-of-type(3),
+    .principales-destinos div:nth-of-type(4),
+    .principales-destinos div:nth-of-type(5),
+    .principales-destinos div:nth-of-type(6),
+    .actividades-item:nth-of-type(1),
+    .actividades-item:nth-of-type(2),
+    .actividades-item:nth-of-type(3) {
+        grid-column: 1 / span 2;
+    }
+
+    .alojamientos div:nth-of-type(2),
+    .alojamientos div:nth-child(4) {
+        grid-column: 1 / span 1;
+    }
+
+    .alojamientos div:nth-child(3),
+    .alojamientos div:nth-child(5) {
+        grid-column: 2 / span 1;
+    }
+
+    .listado {
+        flex-direction: column;
+    }
+
+    .listado,
+    .actividades-destacadas,
+    .alojamientos,
+    .footer {
+        text-align: center;
+    }
+
+    .actividades-destacadas h2 {
+        margin: 50px 0 20px;
+    }
+
+    .alojamientos-item {
+        padding: 15px;
+    }
+
+    .alojamientos-description p:nth-of-type(1) {
+        right: 0;
+    }
+
+    .alojamientos-description p:nth-of-type(4) {
+        display: block;
+    }
+
+    .footer-item {
+        grid-column: -1;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .menu ul li {
+        padding: 20px;
+        width: 100%;
+    }
+    .menu ul li #search {
+        margin: 5px;
+        padding: 20px 14px;
+    }
+
+    .menu ul li #submit {
+        padding: 20px 30px;
+    }
+}
