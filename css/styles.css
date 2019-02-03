@@ -2058,11 +2058,15 @@ header {
     padding-right: 20px;
 }
 
-.hero {
+/* HERO */
+
+.hero,
+.hero-contacto {
     position: relative;
 }
 
-.hero img {
+.hero img,
+.hero-contacto img {
     width: 100%;
     border-bottom-left-radius: 40%;
     border-bottom-right-radius: 40%;
@@ -2955,9 +2959,11 @@ header {
     grid-template: repeat(3, 1fr) / repeat(3, 1fr);
     grid-gap: 10px;
 }
-
 .alojamiento-consulta-formulario {
     grid-column: 2 / span 1;
+}
+.alojamiento-consulta-formulario,
+.formulario-contacto-container {
     color: #666666;
 }
 
@@ -2966,7 +2972,9 @@ header {
 }
 
 .alojamiento-consulta-formulario input[type=text],
-.alojamiento-consulta-formulario input[type=email] {
+.alojamiento-consulta-formulario input[type=email],
+.formulario-contacto-container input[type=text],
+.formulario-contacto-container input[type=email] {
     background-color: #EFEFEF;
     color: #666666;
     padding: 15px;
@@ -2976,7 +2984,8 @@ header {
     margin: 10px 0;
 }
 
-.alojamiento-consulta-formulario input[type=submit] {
+.alojamiento-consulta-formulario input[type=submit],
+.formulario-contacto-container input[type=submit] {
     margin: 10px 0;
 }
 
@@ -3156,3 +3165,36 @@ header {
     margin: 0;
     white-space: nowrap;
 }
+
+/* CONTACTO */
+.hero-contacto {
+    background-color: #F5F4F5;
+}
+
+.hero-contacto-items {
+    max-width: 1124px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-contacto-items h1 {
+    color: #30664E;
+    font-size: 5em;
+    white-space: nowrap;
+    font-weight: 700;
+}
+
+.hero-contacto-items h2 {
+    color: #666666;
+    font-size: 1.2em;
+    font-weight: 400;
+    padding: 0 15% 50px;
+    margin: 0;
+}
+
+.formulario-contacto {
+    max-width: 1124px;
+    margin: 50px auto;
+}
+
+/* BUG: EL INPUT DE CONSULTA TIENES QUE HACERLO MAS GRANDE Y QUE VALGA TANTO PARA EL OTRO FORUMULARIO COMO PA ESTE */
