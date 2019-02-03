@@ -2661,7 +2661,8 @@ header {
     font-weight: 400;
 }
 
-.alojamientos-santa-rosa-de-calamuchita {
+.alojamientos-santa-rosa-de-calamuchita,
+.actividades-santa-rosa-de-calamuchita {
     display: grid;
     grid-template-columns: .6fr 1.4fr;
     max-width: 1124px;
@@ -2730,7 +2731,8 @@ header {
     margin-top: -6.5px;
 }
 
-.alojamientos-destacados {
+.alojamientos-destacados,
+.actividades-destacados {
     grid-column: 2 / span 1;
 }
 
@@ -2753,7 +2755,8 @@ header {
     content: ">";
 }
 
-.alojamientos-destacados-items {
+.alojamientos-destacados-items,
+.actividades-destacados-items {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2761,11 +2764,13 @@ header {
     height: 150px;
 }
 
-.alojamientos-destacados-items .texto h2 {
+.alojamientos-destacados-items .texto h2,
+.actividades-destacados-items .texto h2 {
     font-size: 20px;
 }
 
-.alojamientos-destacados-items .imagen {
+.alojamientos-destacados-items .imagen,
+.actividades-destacados-items .imagen {
     width: 40%;
     height: 100%;
     position: relative;
@@ -2774,7 +2779,8 @@ header {
     background-position: center;
 }
 
-.alojamientos-destacados-items .texto {
+.alojamientos-destacados-items .texto,
+.actividades-destacados-items .texto {
     width: 60%;
     height: 100%;
     padding: 0 0 0 20px;
@@ -2787,13 +2793,17 @@ header {
 }
 
 .alojamientos-destacados-items .texto h2, 
-.alojamientos-destacados-items .texto p {
+.alojamientos-destacados-items .texto p,
+.actividades-destacados-items .texto h2, 
+.actividades-destacados-items .texto p {
     margin: 0;
     padding: 5px;
 }
 
 .alojamientos-destacados-items .imagen p,
-.alojamiento-cabana-y-apart .imagen p {
+.alojamiento-cabana-y-apart .imagen p,
+.actividades-destacados-items .imagen p
+{
     position: absolute;
     top: 0;
     left: 0;
@@ -2805,7 +2815,8 @@ header {
     font-size: 14px;
 }
 
-.alojamientos-destacados-items .texto p:nth-of-type(3) {
+.alojamientos-destacados-items .texto p:nth-of-type(3),
+.actividades-destacados-items .texto p:nth-of-type(3) {
     font-size: 12px;
     border: 1px solid white;
     margin: 5px;
@@ -2815,14 +2826,20 @@ header {
 .alojamientos-destacados div:nth-child(7) .texto,
 .alojamientos-destacados div:nth-child(8) .texto,
 .alojamientos-destacados div:nth-child(9) .texto,
-.alojamientos-destacados div:nth-child(10) .texto {
+.alojamientos-destacados div:nth-child(10) .texto,
+.actividades-destacados div:nth-child(6) .texto,
+.actividades-destacados div:nth-child(7) .texto,
+.actividades-destacados div:nth-child(8) .texto,
+.actividades-destacados div:nth-child(9) .texto,
+.actividades-destacados div:nth-child(10) .texto {
     background-color: #EFEFEF;
 }
 
 .alojamientos-destacados div:nth-child(1) .texto h2,
 .alojamientos-destacados div:nth-child(2) .texto h2,
 .alojamientos-destacados div:nth-child(3) .texto h2,
-.alojamientos-destacados div:nth-child(4) .texto h2 {
+.alojamientos-destacados div:nth-child(4) .texto h2,
+.actividades-destacados .texto h2 {
     color: white;
 }
 
@@ -2830,7 +2847,7 @@ header {
 .alojamientos-destacados div:nth-child(7) .texto h2,
 .alojamientos-destacados div:nth-child(8) .texto h2,
 .alojamientos-destacados div:nth-child(9) .texto h2,
-.alojamientos-destacados div:nth-child(10) .texto h2 {
+.alojamientos-destacados div:nth-child(10) .texto h2,{
     color: #30664E;
 }
 
@@ -2842,6 +2859,10 @@ header {
     color: #666666;
 }
 
+.texto-seo {
+    max-width: 1124px;
+    margin: 100px auto;
+}
 /* ALOJAMIENTO ADENTRO */
 
 .alojamiento-cabana-y-apart-container {
@@ -2990,3 +3011,28 @@ header {
 .alojamiento-opiniones-items h3 {
     margin-right: 10px;
 }
+
+/* ACTIVIDADES */
+.actividades-destacados>div:nth-child(2)>div.texto,
+.actividades-destacados>div:nth-child(3)>div.texto {
+    background-color: #30664E;
+}
+.actividades-destacados>div:nth-child(4)>div.texto {
+
+}
+.actividades-destacados>div:nth-child(4)>div.texto,
+.actividades-destacados>div:nth-child(5)>div.texto,
+.actividades-destacados>div:nth-child(6)>div.texto,
+.actividades-destacados>div:nth-child(7)>div.texto {
+    background-color: #24B27C;
+}
+
+
+ .actividades-destacados .texto p:nth-child(2) {
+     font-size: 14px;
+ }
+
+ .actividades-destacados .texto p:nth-child(3) span {
+     display: inline-block;
+     margin-left: 15px;
+ }
