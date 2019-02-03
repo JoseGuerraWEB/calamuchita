@@ -2792,9 +2792,9 @@ header {
     justify-content: center;
 }
 
-.alojamientos-destacados-items .texto h2, 
+.alojamientos-destacados-items .texto h2,
 .alojamientos-destacados-items .texto p,
-.actividades-destacados-items .texto h2, 
+.actividades-destacados-items .texto h2,
 .actividades-destacados-items .texto p {
     margin: 0;
     padding: 5px;
@@ -2802,8 +2802,8 @@ header {
 
 .alojamientos-destacados-items .imagen p,
 .alojamiento-cabana-y-apart .imagen p,
-.actividades-destacados-items .imagen p
-{
+.actividades-destacados-items .imagen p,
+.actividades-vuelta-por-el-pueblo .imagen p {
     position: absolute;
     top: 0;
     left: 0;
@@ -2847,7 +2847,8 @@ header {
 .alojamientos-destacados div:nth-child(7) .texto h2,
 .alojamientos-destacados div:nth-child(8) .texto h2,
 .alojamientos-destacados div:nth-child(9) .texto h2,
-.alojamientos-destacados div:nth-child(10) .texto h2,{
+.alojamientos-destacados div:nth-child(10) .texto h2,
+    {
     color: #30664E;
 }
 
@@ -2859,18 +2860,21 @@ header {
     color: #666666;
 }
 
-.texto-seo {
+.actividades-texto-seo {
     max-width: 1124px;
     margin: 100px auto;
 }
+
 /* ALOJAMIENTO ADENTRO */
 
-.alojamiento-cabana-y-apart-container {
+.alojamiento-cabana-y-apart-container,
+.actividades-vuelta-por-el-pueblo-container {
     background-color: #EFEFEF;
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
-.alojamiento-cabana-y-apart {
+.alojamiento-cabana-y-apart,
+.actividades-vuelta-por-el-pueblo {
     max-width: 1124px;
     margin: 0 auto;
     display: grid;
@@ -2879,37 +2883,42 @@ header {
 }
 
 .alojamiento-cabana-y-apart div:nth-of-type(2),
-.alojamiento-cabana-y-apart div:nth-of-type(3) {
+.alojamiento-cabana-y-apart div:nth-of-type(3),
+.actividades-vuelta-por-el-pueblo div:nth-of-type(2),
+.actividades-vuelta-por-el-pueblo div:nth-of-type(3) {
     justify-self: center;
     align-self: center;
 }
 
-.alojamiento-cabana-y-apart .breadcrumbs {
+.alojamiento-cabana-y-apart .breadcrumbs,
+.actividades-vuelta-por-el-pueblo .breadcrumbs {
     grid-column: 1 / span 2;
 }
 
-.alojamiento-cabana-y-apart .breadcrumbs a {
+.alojamiento-cabana-y-apart .breadcrumbs a,
+.actividades-vuelta-por-el-pueblo .breadcrumbs a {
     margin: 0;
 }
 
-.alojamiento-cabana-y-apart .imagen {
-    width: 100%;
-    height: 100%;
+.alojamiento-cabana-y-apart .imagen,
+.actividades-vuelta-por-el-pueblo .imagen {
     position: relative;
 }
 
-.alojamiento-cabana-y-apart .texto {
+.alojamiento-cabana-y-apart .texto,
+.actividades-vuelta-por-el-pueblo .texto {
     width: 100%;
-    height: 100%;
     color: #666666;
 }
 
-.alojamiento-cabana-y-apart .texto a h1 {
+.alojamiento-cabana-y-apart .texto a h1,
+.actividades-vuelta-por-el-pueblo .texto a h1 {
     font-size: 2.5em;
     color: #666666;
 }
 
-.alojamiento-cabana-y-apart .texto div {
+.alojamiento-cabana-y-apart .texto div,
+.actividades-vuelta-por-el-pueblo .texto p {
     border-top: 1px solid #666666;
     padding: 20px 0;
 }
@@ -2972,7 +2981,7 @@ header {
 }
 
 .alojamiento-servicios-container {
-    background-color:#24B27C;
+    background-color: #24B27C;
     padding: 50px 0;
 }
 
@@ -3017,9 +3026,9 @@ header {
 .actividades-destacados>div:nth-child(3)>div.texto {
     background-color: #30664E;
 }
-.actividades-destacados>div:nth-child(4)>div.texto {
 
-}
+.actividades-destacados>div:nth-child(4)>div.texto {}
+
 .actividades-destacados>div:nth-child(4)>div.texto,
 .actividades-destacados>div:nth-child(5)>div.texto,
 .actividades-destacados>div:nth-child(6)>div.texto,
@@ -3028,11 +3037,61 @@ header {
 }
 
 
- .actividades-destacados .texto p:nth-child(2) {
-     font-size: 14px;
- }
+.actividades-destacados .texto p:nth-child(2) {
+    font-size: 14px;
+}
 
- .actividades-destacados .texto p:nth-child(3) span {
-     display: inline-block;
-     margin-left: 15px;
- }
+.actividades-destacados .texto p:nth-child(3) span {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+/* ACTIVIDADES ADENTRO */
+
+.actividades-slider {
+    max-width: 1124px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+}
+
+.actividades-dentro-texto-seo-container {
+    background-color: #EFEFEF;
+    padding: 50px 0;
+}
+
+.actividades-dentro-texto-seo {
+    max-width: 1124px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+.actividades-dentro-texto-seo div {
+    justify-self: center;
+    align-self: center;
+}
+
+.actividades-dentro-texto-seo div:nth-of-type(1) {
+    background-color: #30664E;
+    padding: 60px;
+    color: white;
+}
+
+.actividades-dentro-texto-seo div:nth-of-type(1) h3 {
+    margin: 0;
+}
+
+.actividades-dentro-texto-seo div:nth-of-type(1) a {
+    margin: 16px 0;
+    display: block;
+    color: white;
+}
+
+.actividades-dentro-texto-seo div:nth-of-type(2) {
+    color: #666666;
+    font-size: 20px;
+}
