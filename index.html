@@ -375,11 +375,9 @@
         function mediaQuery() {
             if (consulta.matches) {
                 $burguerButton.addEventListener('touchstart', toggleMenu);
-                $burguerButton.addEventListener('click', toggleMenu);
 
             } else {
                 $burguerButton.removeEventListener('touchstart', toggleMenu);
-                $burguerButton.removeEventListener('click', toggleMenu);
             }
         }
 
