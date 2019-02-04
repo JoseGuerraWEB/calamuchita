@@ -839,10 +839,10 @@ a {
     grid-gap: 60px;
 }
 
- .alojamientos-santa-rosa-de-calamuchita .breadcrumbs {
-     grid-column: 1 / span 2;
-     text-align: center;
- }
+.alojamientos-santa-rosa-de-calamuchita .breadcrumbs {
+    grid-column: 1 / span 2;
+    text-align: center;
+}
 
 .filtro {
     grid-column: 1 / span 1;
@@ -1261,6 +1261,9 @@ body>main>div.alojamientos-destacados>div:nth-child(10)>div.texto>a>h2 {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
     grid-gap: 10px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
 }
 
 .actividades-dentro-texto-seo-container {
@@ -1537,7 +1540,7 @@ body>main>div.alojamientos-destacados>div:nth-child(10)>div.texto>a>h2 {
         padding: 30px;
     }
 
-    .actividades-recomendadas > * {
+    .actividades-recomendadas>* {
         grid-column: 1 / span 3;
         text-align: center;
     }
@@ -1546,7 +1549,7 @@ body>main>div.alojamientos-destacados>div:nth-child(10)>div.texto>a>h2 {
         grid-gap: 10px;
     }
 
-    .actividades-slider > * {
+    .actividades-slider>* {
         grid-column: 1 / span 4;
     }
 }
@@ -1634,11 +1637,10 @@ body>main>div.alojamientos-destacados>div:nth-child(10)>div.texto>a>h2 {
     .ideas div:nth-of-type(3),
     .santa-rosa-de-calamuchita div:nth-of-type(1),
     .santa-rosa-de-calamuchita div:nth-of-type(2),
-    .santa-rosa-de-calamuchita div:nth-of-type(3)
-    {
+    .santa-rosa-de-calamuchita div:nth-of-type(3) {
         grid-column: 1 / span 1;
-    }   
-    
+    }
+
     .santa-rosa-de-calamuchita {
         text-align: center;
     }
@@ -1728,26 +1730,26 @@ body>main>div.alojamientos-destacados>div:nth-child(10)>div.texto>a>h2 {
         padding: 20px;
         width: 100%;
     }
-    
+
     .menu ul li #search {
         margin: 5px;
         padding: 20px 14px;
     }
-    
+
     .menu ul li #submit {
         padding: 20px 30px;
     }
-    
+
     .hero-localidades-items {
         flex-wrap: wrap;
         height: auto;
         justify-content: center;
     }
-    
+
     .santa-rosa-de-calamuchita div:nth-of-type(1) {
         margin-bottom: 0;
     }
-    
+
     .hero-alojamientos-portada h1 {
         font-size: 2.3em;
     }
