@@ -10,15 +10,24 @@
 </head>
 
 <body>
-    <section class="container">
-        <header>
+    <section class="header-container">
+        <header class="header">
             <figure class="logotipo">
                 <a href="../index.html">
-                    <img src="../images/logotipo.png" alt="Logotipo Calamuchita" srcset="" width="250">
+                    <img src="../images/logotipo.png" alt="Logotipo Calamuchita" srcset="" width="200">
                 </a>
             </figure>
-            <nav class="menu">
+            <span class="burguer-button icon-menu" id="burguer-button"></span>
+            <nav class="menu" id="menu">
                 <ul>
+                    <li>
+                        <form action="">
+                            <div class="formulario-header">
+                                <input type="search" name="search" id="search" placeholder="¿Dónde vamos?">
+                                <input type="submit" value="Buscar" id="submit">
+                            </div>
+                        </form>
+                    </li>
                     <li>
                         <a href="localidades.html">Localidades</a>
                     </li>
@@ -203,7 +212,7 @@
             <div class="footer-item">
                 <h4>Soporte</h4>
                 <a href="">Preguntas frecuentes</a>
-                <a href="">Contacto</a>
+                <a href="contacto.html">Contacto</a>
             </div>
             <div class="footer-item">
                 <h4>Redes</h4>
@@ -212,65 +221,66 @@
             </div>
             <div class="footer-item">
                 <h4>Soporte</h4>
-                <a href="">Quiénes somos?</a>
-                <a href="">Para conocer más a cerca de MásCalamuchita o para despejar dudas contáctese con nosotros:</a>
-                <a href="">info@mascalamuchita.com.ar</a>
+                <a href="contacto.html">Quiénes somos?</a>
+                <a href="contacto.html">Para conocer más a cerca de MásCalamuchita o para despejar dudas
+                    contáctese con nosotros:</a>
+                <a href="mailto:info@mascalamuchita.com.ar">info@mascalamuchita.com.ar</a>
             </div>
         </div>
     </footer>
     <section class="footer-final">
     </section>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
-<script>
-    var consulta = window.matchMedia('(max-width: 1024px)');
-    consulta.addListener(mediaQuery);
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+    <script>
+        var consulta = window.matchMedia('(max-width: 1024px)');
+        consulta.addListener(mediaQuery);
 
-    var $burguerButton = document.getElementById("burguer-button");
-    var $menu = document.getElementById("menu");
+        var $burguerButton = document.getElementById("burguer-button");
+        var $menu = document.getElementById("menu");
 
-    function toggleMenu() {
-        $menu.classList.toggle('active');
-        $burguerButton.classList.toggle('icon-salir');
-        console.log("ok");
-    }
-
-    function showMenu() {
-        $menu.classList.add('active');
-        $burguerButton.classList.add('icon-salir');
-    }
-
-    function hideMenu() {
-        $menu.classList.remove('active');
-        $burguerButton.classList.remove('icon-salir');
-    }
-
-    function mediaQuery() {
-        if (consulta.matches) {
-            $burguerButton.addEventListener('touchstart', toggleMenu);
-
-        } else {
-            $burguerButton.removeEventListener('touchstart', toggleMenu);
+        function toggleMenu() {
+            $menu.classList.toggle('active');
+            $burguerButton.classList.toggle('icon-salir');
+            console.log("ok");
         }
-    }
 
-    mediaQuery();
+        function showMenu() {
+            $menu.classList.add('active');
+            $burguerButton.classList.add('icon-salir');
+        }
 
-    // Lazy loading
+        function hideMenu() {
+            $menu.classList.remove('active');
+            $burguerButton.classList.remove('icon-salir');
+        }
 
-    var bLazy = new Blazy({
-        selector: 'img'
-    });
+        function mediaQuery() {
+            if (consulta.matches) {
+                $burguerButton.addEventListener('touchstart', toggleMenu);
 
-    // gestos
+            } else {
+                $burguerButton.removeEventListener('touchstart', toggleMenu);
+            }
+        }
 
-    var $body = document.body;
+        mediaQuery();
 
-    var gestos = new Hammer($body);
+        // Lazy loading
 
-    gestos.on('swipeleft', showMenu);
-    gestos.on('swiperight', hideMenu);
-</script>
+        var bLazy = new Blazy({
+            selector: 'img'
+        });
+
+        // gestos
+
+        var $body = document.body;
+
+        var gestos = new Hammer($body);
+
+        gestos.on('swipeleft', showMenu);
+        gestos.on('swiperight', hideMenu);
+    </script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/styles.css">

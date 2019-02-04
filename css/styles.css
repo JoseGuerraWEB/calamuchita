@@ -1512,6 +1512,34 @@ body>main>div.alojamientos-destacados>div:nth-child(10)>div.texto>a>h2 {
         margin: 30px;
         text-align: center;
     }
+
+    .actividades-vuelta-por-el-pueblo {
+        grid-template-columns: 1fr;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .actividades-vuelta-por-el-pueblo .breadcrumbs {
+        grid-column: 1 / span 2;
+    }
+
+    .actividades-dentro-texto-seo {
+        text-align: center;
+        padding: 30px;
+    }
+
+    .actividades-dentro-texto-seo div {
+        grid-column: 1 / span 2;
+    }
+
+    .actividades-recomendadas {
+        padding: 30px;
+    }
+
+    .actividades-recomendadas > * {
+        grid-column: 1 / span 3;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -1734,6 +1762,6 @@ body>main>div.alojamientos-destacados>div:nth-child(10)>div.texto>a>h2 {
 
     .actividades-destacados-items,
     .alojamientos-destacados-items {
-        height: 250px;
+        height: 300px;
     }
 }
