@@ -372,7 +372,7 @@ a {
 
 .container-destinos {
     background-color: #F5F4F5;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .principales-destinos {
@@ -464,7 +464,6 @@ a {
 
 .container-actividades {
     background-color: #F5F4F5;
-    padding-bottom: 50px;
 }
 
 .actividades-destacadas {
@@ -479,7 +478,7 @@ a {
     grid-column: 1 / span 3;
     justify-self: center;
     align-self: center;
-    /* margin: 50px 0 20px; */
+    margin: 50px 0 20px;
     color: #30664E;
 }
 
@@ -572,7 +571,7 @@ a {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .alojamientos h2 {
