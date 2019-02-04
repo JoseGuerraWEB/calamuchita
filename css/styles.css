@@ -1716,6 +1716,10 @@ body>main>div.alojamientos-destacados>div:nth-child(10)>div.texto>a>h2 {
         padding: 30px;
         text-align: center;
     }
+
+    .hero-contacto-items h1 {
+        font-size: 2.5em;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -1771,5 +1775,9 @@ body>main>div.alojamientos-destacados>div:nth-child(10)>div.texto>a>h2 {
     .actividades-destacados-items,
     .alojamientos-destacados-items {
         height: 300px;
+    }
+
+    body>section.formulario-contacto>form>a {
+        font-size: 1.3em;
     }
 }
