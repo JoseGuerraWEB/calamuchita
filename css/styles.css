@@ -252,14 +252,22 @@ a {
 .hero img,
 .hero-contacto img {
     width: 100%;
-    border-bottom-left-radius: 40%;
-    border-bottom-right-radius: 40%;
+}
+
+.hero-image {
+    height: 500px;
+    width: 100%;
+    background-image: url("https://lorempixel.com/1920/1080/people");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 8%;
+    border-bottom-right-radius: 8%;
 }
 
 .hero .formulario {
     position: absolute;
     left: 50%;
-    top: 40%;
+    top: 30%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     background-color: #fff;
