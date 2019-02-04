@@ -1197,7 +1197,7 @@ body>main>div.alojamientos-destacados>div:nth-child(10)>div.texto>a>h2 {
 .alojamiento-cabana-y-apart-container,
 .actividades-vuelta-por-el-pueblo-container {
     background-color: #EFEFEF;
-    padding: 50px 0;
+    padding: 0 0 50px;
 }
 
 .alojamiento-cabana-y-apart,
