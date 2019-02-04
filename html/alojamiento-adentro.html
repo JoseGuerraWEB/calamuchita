@@ -33,6 +33,390 @@
 
     gtag('config', 'UA-99021511-1');
 </script>
+<style>
+    @font-face {
+        font-family: 'icomoon';
+        src: url(../fonts/icomoon.eot?qmkdxx);
+        src: url(../fonts/icomoon.eot?qmkdxx#iefix)format('embedded-opentype'), url(../fonts/icomoon.ttf?qmkdxx)format('truetype'), url(../fonts/icomoon.woff?qmkdxx)format('woff'), url(../fonts/icomoon.svg?qmkdxx#icomoon)format('svg');
+        font-weight: normal;
+        font-style: normal
+    }
+
+    [class^="icon-"],
+    [class*="icon-"] {
+        font-family: 'icomoon' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale
+    }
+
+    .icon-instagram:before {
+        content: "\e900"
+    }
+
+    .icon-facebook:before {
+        content: "\e901"
+    }
+
+    .icon-menu:before {
+        content: "\e9bf"
+    }
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0
+    }
+
+    a {
+        text-decoration: none
+    }
+
+    .header-container {
+        background-color: #30664E
+    }
+
+    .header {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        height: 75px;
+        color: white;
+        max-width: 1366px;
+        margin: 0 auto
+    }
+
+    .logotipo {
+        margin: 0 0 0 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+    .logotipo img {
+        vertical-align: top
+    }
+
+    .header span {
+        display: none
+    }
+
+    .menu ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+    .menu ul li:first-child {
+        display: none
+    }
+
+    .menu ul li {
+        list-style: none;
+        padding: 15px 0 15px 20px;
+        border-right: 1px solid;
+        font-weight: 500;
+        font-size: 1em
+    }
+
+    .menu li:last-child {
+        border: 0
+    }
+
+    .menu ul li a {
+        color: white;
+        padding-right: 20px
+    }
+
+    .menu ul li:nth-child(5) a:nth-child(1) {
+        padding-right: 10px
+    }
+
+    #search {
+        background-color: #fff;
+        border-top-left-radius: 42px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 42px;
+        color: black;
+        font-size: 15px;
+        padding: 25px 75px
+    }
+
+    *::-webkit-input-placeholder {
+        font-weight: 700
+    }
+
+    *:-ms-input-placeholder {
+        font-weight: 700
+    }
+
+    *::-ms-input-placeholder {
+        font-weight: 700
+    }
+
+    #search {
+        color: black
+    }
+
+    #submit {
+        color: white;
+        background-color: #24B27C;
+        border-radius: 42px;
+        font-size: 15px;
+        padding: 20px 60px;
+        margin-left: 2px;
+        position: relative;
+        left: -5px
+    }
+
+    #search,
+    #submit {
+        border: 0;
+        outline: 0
+    }
+
+    .hero-alojamientos {
+        height: 90vh;
+        overflow: hidden;
+        color: white
+    }
+
+    .hero-alojamientos-portada {
+        background-image: url(https://lorempixel.com/1920/1124/animals);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 65vh
+    }
+
+    .hero-alojamientos-portada h2:nth-of-type(1),
+    .hero-alojamientos-portada h2:nth-of-type(2) {
+        max-width: 1124px;
+        margin: 0 auto;
+        position: relative;
+        top: 50%;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, .43);
+        font-size: 3em;
+        padding: 5px 0 5px 30px
+    }
+
+    .hero-alojamientos-portada h2 span {
+        font-size: 22px;
+        padding: 8px;
+        background-color: #24B27C;
+        text-shadow: none
+    }
+
+    .hero-alojamientos-datos {
+        height: 25vh;
+        background-color: #30664E
+    }
+
+    .hero-alojamientos-datos div {
+        max-width: 1124px;
+        margin: 0 auto;
+        height: 25vh;
+        background-color: #30664E;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 0 30px
+    }
+
+    .hero-alojamientos-datos div h2:nth-of-type(1) {
+        font-weight: 300;
+        border-right: 1px solid white;
+        margin: 0;
+        padding: 3% 10% 3% 0
+    }
+
+    .hero-alojamientos-datos div h2:nth-of-type(1),
+    .hero-alojamientos-datos div h2:nth-of-type(2),
+    .hero-alojamientos-datos div h2:nth-of-type(3),
+    .hero-alojamientos-datos div h2:nth-of-type(4) {
+        font-size: 2.5em
+    }
+
+    .hero-alojamientos-datos div h2:nth-of-type(2) span,
+    .hero-alojamientos-datos div h2:nth-of-type(3) span,
+    .hero-alojamientos-datos div h2:nth-of-type(4) span {
+        font-size: 15px;
+        font-weight: 300
+    }
+
+    .alojamiento-cabana-y-apart-container {
+        background-color: #EFEFEF;
+        padding: 50px 0
+    }
+
+    @media screen and (max-width:1024px) {
+        .header {
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center
+        }
+
+        .logotipo {
+            margin: 0
+        }
+
+        .menu {
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, .8);
+            z-index: 1;
+            display: none
+        }
+
+        .menu ul {
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            margin: 0;
+            padding: 0
+        }
+
+        .menu ul li {
+            border-right: none;
+            border-bottom: 1px solid white;
+            width: 60%;
+            text-align: center;
+            padding: 35px
+        }
+
+        .menu ul li #search {
+            border-top-right-radius: 42px;
+            border-bottom-right-radius: 42px;
+            padding: 20px 60px
+        }
+
+        .menu ul li #search,
+        .menu ul li #submit {
+            margin: 10px;
+            text-align: center
+        }
+
+        .menu ul li:first-child {
+            display: inline-block
+        }
+
+        #burguer-button {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            position: fixed;
+            bottom: 5%;
+            right: 5%;
+            width: 50px;
+            height: 50px;
+            background-color: #30664E;
+            font-size: 20px;
+            border-radius: 50%;
+            z-index: 2;
+            border: 1px solid rgba(255, 255, 255, .4)
+        }
+    }
+
+    @media screen and (max-width:769px) {
+
+        .hero-alojamientos,
+        .hero-alojamientos-datos {
+            height: auto;
+            text-align: center
+        }
+
+        .hero-alojamientos-datos div {
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            height: auto;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center
+        }
+
+        .hero-alojamientos-datos div h2:nth-of-type(1) {
+            border: 0;
+            padding: 50px 10px
+        }
+
+        .hero-alojamientos-portada h2:nth-of-type(1),
+        .hero-alojamientos-portada h2:nth-of-type(2) {
+            top: 30%;
+            font-size: 2.5em
+        }
+
+        .hero-alojamientos-portada h2 span {
+            top: 30%;
+            font-size: 15px
+        }
+    }
+
+    @media screen and (max-width:500px) {
+        .menu ul li {
+            padding: 20px;
+            width: 100%
+        }
+
+        .menu ul li #search {
+            margin: 5px;
+            padding: 20px 14px
+        }
+
+        .menu ul li #submit {
+            padding: 20px 30px
+        }
+    }
+</style>
 </head>
 
 <body>
@@ -316,7 +700,7 @@
     </script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles.min.css">
 </body>
 
 </html>

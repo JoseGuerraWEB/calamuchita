@@ -33,6 +33,409 @@
 
     gtag('config', 'UA-99021511-1');
 </script>
+<style>
+    @font-face {
+        font-family: 'icomoon';
+        src: url(../fonts/icomoon.eot?qmkdxx);
+        src: url(../fonts/icomoon.eot?qmkdxx#iefix)format('embedded-opentype'), url(../fonts/icomoon.ttf?qmkdxx)format('truetype'), url(../fonts/icomoon.woff?qmkdxx)format('woff'), url(../fonts/icomoon.svg?qmkdxx#icomoon)format('svg');
+        font-weight: normal;
+        font-style: normal
+    }
+
+    [class^="icon-"],
+    [class*="icon-"] {
+        font-family: 'icomoon' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale
+    }
+
+    .icon-instagram:before {
+        content: "\e900"
+    }
+
+    .icon-facebook:before {
+        content: "\e901"
+    }
+
+    .icon-location:before {
+        content: "\e947"
+    }
+
+    .icon-map2:before {
+        content: "\e94c"
+    }
+
+    .icon-spoon-knife:before {
+        content: "\e9a3"
+    }
+
+    .icon-menu:before {
+        content: "\e9bf"
+    }
+
+    .icon-heart:before {
+        content: "\e9da"
+    }
+
+    .icon-sleepy:before {
+        content: "\e9fd"
+    }
+
+    .icon-info:before {
+        content: "\ea0c"
+    }
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0
+    }
+
+    a {
+        text-decoration: none
+    }
+
+    .header-container {
+        background-color: #30664E
+    }
+
+    .header {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        height: 75px;
+        color: white;
+        max-width: 1366px;
+        margin: 0 auto
+    }
+
+    .logotipo {
+        margin: 0 0 0 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+    .logotipo img {
+        vertical-align: top
+    }
+
+    .header span {
+        display: none
+    }
+
+    .menu ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+    .menu ul li:first-child {
+        display: none
+    }
+
+    .menu ul li {
+        list-style: none;
+        padding: 15px 0 15px 20px;
+        border-right: 1px solid;
+        font-weight: 500;
+        font-size: 1em
+    }
+
+    .menu li:last-child {
+        border: 0
+    }
+
+    .menu ul li a {
+        color: white;
+        padding-right: 20px
+    }
+
+    .menu ul li:nth-child(5) a:nth-child(1) {
+        padding-right: 10px
+    }
+
+    #search {
+        background-color: #fff;
+        border-top-left-radius: 42px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 42px;
+        color: black;
+        font-size: 15px;
+        padding: 25px 75px
+    }
+
+    *::-webkit-input-placeholder {
+        font-weight: 700
+    }
+
+    *:-ms-input-placeholder {
+        font-weight: 700
+    }
+
+    *::-ms-input-placeholder {
+        font-weight: 700
+    }
+
+    #search {
+        color: black
+    }
+
+    #submit {
+        color: white;
+        background-color: #24B27C;
+        border-radius: 42px;
+        font-size: 15px;
+        padding: 20px 60px;
+        margin-left: 2px;
+        position: relative;
+        left: -5px
+    }
+
+    #search,
+    #submit {
+        border: 0;
+        outline: 0
+    }
+
+    .hero-localidades {
+        background-color: #F5F4F5
+    }
+
+    .hero-localidades-title {
+        height: 500px;
+        width: 100%;
+        background-image: url(http://lorempixel.com/1920/1080/animals);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        text-align: center;
+        font-size: 3vw;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, .43);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+
+    .hero-localidades-items {
+        max-width: 1124px;
+        margin: 0 auto;
+        height: 250px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: center;
+        color: #30664E
+    }
+
+    .hero-localidades-items div a {
+        color: #30664E;
+        display: inline-block;
+        padding: 30px 10px
+    }
+
+    .hero-localidades-items div a i {
+        font-size: 6vw
+    }
+
+    .hero-localidades-items div a h3 {
+        font-weight: 300
+    }
+
+    .santa-rosa-de-calamuchita {
+        display: grid;
+        max-width: 1124px;
+        margin: 0 auto;
+        grid-template-columns: .75fr 1.25fr;
+        grid-gap: 60px;
+        margin-bottom: 100px
+    }
+
+    .santa-rosa-de-calamuchita div:nth-of-type(1) {
+        grid-column: 1 / span 2;
+        margin: 50px 0 0
+    }
+
+    .santa-rosa-de-calamuchita div:nth-of-type(1) a {
+        color: #30664E;
+        font-weight: 700
+    }
+
+    .santa-rosa-de-calamuchita div:nth-of-type(1) a:first-child::after {
+        content: ">"
+    }
+
+    @media screen and (max-width:1024px) {
+        .header {
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center
+        }
+
+        .logotipo {
+            margin: 0
+        }
+
+        .menu {
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, .8);
+            z-index: 1;
+            display: none
+        }
+
+        .menu ul {
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            margin: 0;
+            padding: 0
+        }
+
+        .menu ul li {
+            border-right: none;
+            border-bottom: 1px solid white;
+            width: 60%;
+            text-align: center;
+            padding: 35px
+        }
+
+        .menu ul li #search {
+            border-top-right-radius: 42px;
+            border-bottom-right-radius: 42px;
+            padding: 20px 60px
+        }
+
+        .menu ul li #search,
+        .menu ul li #submit {
+            margin: 10px;
+            text-align: center
+        }
+
+        .menu ul li:first-child {
+            display: inline-block
+        }
+
+        #burguer-button {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            position: fixed;
+            bottom: 5%;
+            right: 5%;
+            width: 50px;
+            height: 50px;
+            background-color: #30664E;
+            font-size: 20px;
+            border-radius: 50%;
+            z-index: 2;
+            border: 1px solid rgba(255, 255, 255, .4)
+        }
+    }
+
+    @media screen and (max-width:769px) {
+        .santa-rosa-de-calamuchita {
+            grid-template-columns: 1fr
+        }
+
+        .santa-rosa-de-calamuchita div:nth-of-type(1) {
+            grid-column: 1 / span 1
+        }
+
+        .santa-rosa-de-calamuchita {
+            text-align: center
+        }
+    }
+
+    @media screen and (max-width:500px) {
+        .menu ul li {
+            padding: 20px;
+            width: 100%
+        }
+
+        .menu ul li #search {
+            margin: 5px;
+            padding: 20px 14px
+        }
+
+        .menu ul li #submit {
+            padding: 20px 30px
+        }
+
+        .hero-localidades-items {
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            height: auto;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center
+        }
+
+        .santa-rosa-de-calamuchita div:nth-of-type(1) {
+            margin-bottom: 0
+        }
+    }
+</style>
 </head>
 
 <body>
@@ -345,7 +748,6 @@
     </script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/styles.css">
 </body>
 
 </html>
