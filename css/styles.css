@@ -165,9 +165,15 @@ a {
 }
 
 .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 75px;
     color: white;
     max-width: 1366px;
@@ -176,9 +182,15 @@ a {
 
 .logotipo {
     margin: 0 0 0 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .logotipo img {
@@ -194,9 +206,15 @@ a {
 }
 
 .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .menu ul li:first-child {
@@ -261,6 +279,18 @@ a {
     padding: 25px 75px;
 }
 
+*::-webkit-input-placeholder {
+    font-weight: 700;
+}
+
+*:-ms-input-placeholder {
+    font-weight: 700;
+}
+
+*::-ms-input-placeholder {
+    font-weight: 700;
+}
+
 *::placeholder {
     font-weight: 700;
 }
@@ -285,27 +315,41 @@ a {
 #submit {
     border: none;
     outline: none;
+    -webkit-transition: .2s;
     transition: .2s;
 }
 
 #search:active,
 #submit:active {
-    transform: scale(.8);
+    -webkit-transform: scale(.8);
+            transform: scale(.8);
 }
 
 .hero-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     max-width: 1124px;
     margin: 0 auto;
     height: 250px;
 }
 
 .hero-items div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .hero-items i {
@@ -341,7 +385,8 @@ a {
 
 .principales-destinos div {
     justify-self: center;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     position: relative;
 }
 
@@ -374,9 +419,14 @@ a {
 
 .listado {
     height: 280px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     max-width: 1124px;
     margin: 0 auto;
     padding: 40px;
@@ -392,9 +442,15 @@ a {
     height: 50px;
     background-color: #fff;
     color: #24B27C;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-radius: 50%;
 }
 
@@ -421,7 +477,8 @@ a {
 
 .actividades-item {
     justify-self: center;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     position: relative;
     background-color: #fff;
     position: relative;
@@ -480,10 +537,17 @@ a {
 .actividades-tag {
     grid-column: 1 / span 3;
     margin: 40px 0 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .actividades-tag a {
@@ -612,10 +676,19 @@ a {
     text-align: center;
     font-size: 3vw;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.43);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 
@@ -623,9 +696,14 @@ a {
     max-width: 1124px;
     margin: 0 auto;
     height: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     color: #30664E;
 }
@@ -672,7 +750,8 @@ a {
 }
 
 .santa-rosa-de-calamuchita div:nth-of-type(2) img {
-    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.42);
+    -webkit-box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.42);
+            box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.42);
     margin-bottom: 25px;
     cursor: pointer;
 }
@@ -717,7 +796,8 @@ a {
 .ideas div {
     position: relative;
     justify-self: center;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
 }
 
 .ideas div:nth-of-type(1) {
@@ -825,9 +905,15 @@ a {
     margin: 0 auto;
     height: 25vh;
     background-color: #30664E;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 0 30px;
 }
 
@@ -969,12 +1055,19 @@ body>main>div.filtro>div:nth-child(6)>label {
 
 .alojamientos-destacados-items,
 .actividades-destacados-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 30px;
     height: 200px;
-    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.42);    
+    -webkit-box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.42);
+            box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.42);    
 }
 
 .alojamientos-destacados-items .texto h2,
@@ -999,10 +1092,19 @@ body>main>div.filtro>div:nth-child(6)>label {
     padding: 0 0 0 20px;
     background-color: #24B27C;
     color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .alojamientos-destacados-items .texto h2,
@@ -1116,7 +1218,8 @@ body>main>div.alojamientos-destacados>div:nth-child(10)>div.texto>a>h2 {
 .actividades-vuelta-por-el-pueblo div:nth-of-type(2),
 .actividades-vuelta-por-el-pueblo div:nth-of-type(3) {
     justify-self: center;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
 }
 
 .alojamiento-cabana-y-apart .breadcrumbs,
@@ -1298,8 +1401,12 @@ body>main>div.alojamientos-destacados>div:nth-child(10)>div.texto>a>h2 {
     grid-template-rows: 1fr;
     grid-gap: 10px;
     height: 500px;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .actividades-dentro-texto-seo-container {
@@ -1317,7 +1424,8 @@ body>main>div.alojamientos-destacados>div:nth-child(10)>div.texto>a>h2 {
 
 .actividades-dentro-texto-seo div {
     justify-self: center;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
 }
 
 .actividades-dentro-texto-seo div:nth-of-type(1) {
@@ -1376,7 +1484,8 @@ body>main>div.alojamientos-destacados>div:nth-child(10)>div.texto>a>h2 {
     background-color: #24B27C;
     color: white;
     justify-self: center;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
 }
 
 .actividades-recomendadas div div {
@@ -1436,10 +1545,19 @@ body>main>div.alojamientos-destacados>div:nth-child(10)>div.texto>a>h2 {
 }
 
 .formulario-contacto-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0 50px;
     text-align: center;
 }
@@ -1458,7 +1576,9 @@ body>main>div.alojamientos-destacados>div:nth-child(10)>div.texto>a>h2 {
 
 @media screen and (max-width: 1024px) {
     .header {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .logotipo {
@@ -1477,17 +1597,29 @@ body>main>div.alojamientos-destacados>div:nth-child(10)>div.texto>a>h2 {
     }
 
     .menu.active {
+        -webkit-transition: .4s;
         transition: .4s;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
     .menu ul {
         height: 100%;
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         margin: 0;
         padding: 0;
     }
@@ -1525,9 +1657,15 @@ body>main>div.alojamientos-destacados>div:nth-child(10)>div.texto>a>h2 {
     }
 
     #burguer-button {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         position: fixed;
         bottom: 5%;
         right: 5%;
@@ -1548,7 +1686,8 @@ body>main>div.alojamientos-destacados>div:nth-child(10)>div.texto>a>h2 {
 
     .hero-items,
     .hero-items div {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         margin: 30px;
         text-align: center;
     }
@@ -1624,7 +1763,10 @@ body>main>div.alojamientos-destacados>div:nth-child(10)>div.texto>a>h2 {
     }
 
     .listado {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .listado,
@@ -1693,9 +1835,12 @@ body>main>div.alojamientos-destacados>div:nth-child(10)>div.texto>a>h2 {
     }
 
     .hero-alojamientos-datos div {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         height: auto;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .hero-alojamientos-datos div h2:nth-of-type(1) {
@@ -1791,9 +1936,12 @@ body>main>div.alojamientos-destacados>div:nth-child(10)>div.texto>a>h2 {
     }
 
     .hero-localidades-items {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         height: auto;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .santa-rosa-de-calamuchita div:nth-of-type(1) {
