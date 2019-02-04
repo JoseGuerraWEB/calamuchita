@@ -871,7 +871,11 @@ a {
 }
 
 body>main>div.filtro>div:nth-child(1)>label,
-body>main>div.filtro>div:nth-child(4)>label {
+body>main>div.filtro>div:nth-child(2)>label,
+body>main>div.filtro>div:nth-child(3)>label,
+body>main>div.filtro>div:nth-child(4)>label,
+body>main>div.filtro>div:nth-child(5)>label,
+body>main>div.filtro>div:nth-child(6)>label {
     color: #666666;
     display: block;
     margin: 5px 0 5px 50px;
