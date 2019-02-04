@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alojamientos</title>
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <meta name="theme-color" content="#30664E">
+    <meta name="msapplication-navbutton-color" content="#30664E">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="description" content="Portal turístico del Valle de Calamuchita 🥇. Alojamientos, guías de actividades, dónde ir y que comer en el valle más lindo de Córdoba. Disfruta del Valle de Camuchita todo el año ✅">
+    <meta property="og:site_name" content="mascalamuchita" />
+    <meta property="og:image:url" content="https://scontent.fmad6-1.fna.fbcdn.net/v/t1.0-9/19260573_1059268330872740_2140727879432464369_n.png?_nc_cat=100&_nc_ht=scontent.fmad6-1.fna&oh=7cc369c8a1633897943077d2eeb123f8&oe=5CFDF7C9" />
+    <meta property="og:description" content="Portal turístico del Valle de Calamuchita 🥇. Alojamientos, guías de actividades, dónde ir y que comer en el valle más lindo de Córdoba. Disfruta del Valle de Camuchita todo el año ✅" />
+    <meta property="og:title" content="Portal turístico del Valle de Calamuchita - mascalamuchita.com.ar">
+    <meta property="og:url" content="http://mascalamuchita.com.ar/" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@mascalamuchita/">
+    <meta name="twitter:creator" content="@mascalamuchita/">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-99021511-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-99021511-1');
+</script>
+    <style>
+        @font-face {
+        font-family: 'icomoon';
+        src: url(../fonts/icomoon.eot?qmkdxx);
+        src: url(../fonts/icomoon.eot?qmkdxx#iefix)format('embedded-opentype'), url(../fonts/icomoon.ttf?qmkdxx)format('truetype'), url(../fonts/icomoon.woff?qmkdxx)format('woff'), url(../fonts/icomoon.svg?qmkdxx#icomoon)format('svg');
+        font-weight: normal;
+        font-style: normal
+    }
+
+    [class^="icon-"],
+    [class*="icon-"] {
+        font-family: 'icomoon' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale
+    }
+
+    .icon-instagram:before {
+        content: "\e900"
+    }
+
+    .icon-facebook:before {
+        content: "\e901"
+    }
+
+    .icon-menu:before {
+        content: "\e9bf"
+    }
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0
+    }
+
+    a {
+        text-decoration: none
+    }
+
+    .header-container {
+        background-color: #30664E
+    }
+
+    .header {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        height: 75px;
+        color: white;
+        max-width: 1366px;
+        margin: 0 auto
+    }
+
+    .logotipo {
+        margin: 0 0 0 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+    .logotipo img {
+        vertical-align: top
+    }
+
+    .header span {
+        display: none
+    }
+
+    .menu ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+    .menu ul li:first-child {
+        display: none
+    }
+
+    .menu ul li {
+        list-style: none;
+        padding: 15px 0 15px 20px;
+        border-right: 1px solid;
+        font-weight: 500;
+        font-size: 1em
+    }
+
+    .menu li:last-child {
+        border: 0
+    }
+
+    .menu ul li a {
+        color: white;
+        padding-right: 20px
+    }
+
+    .menu ul li:nth-child(5) a:nth-child(1) {
+        padding-right: 10px
+    }
+
+    #search {
+        background-color: #fff;
+        border-top-left-radius: 42px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 42px;
+        color: black;
+        font-size: 15px;
+        padding: 25px 75px
+    }
+
+    *::-webkit-input-placeholder {
+        font-weight: 700
+    }
+
+    *:-ms-input-placeholder {
+        font-weight: 700
+    }
+
+    *::-ms-input-placeholder {
+        font-weight: 700
+    }
+
+    #search {
+        color: black
+    }
+
+    #submit {
+        color: white;
+        background-color: #24B27C;
+        border-radius: 42px;
+        font-size: 15px;
+        padding: 20px 60px;
+        margin-left: 2px;
+        position: relative;
+        left: -5px
+    }
+
+    #search,
+    #submit {
+        border: 0;
+        outline: 0
+    }
+
+    .hero-alojamientos {
+        height: 90vh;
+        overflow: hidden;
+        color: white
+    }
+
+    .hero-alojamientos-portada {
+        background-image: url(https://lorempixel.com/1920/1124/animals);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 65vh
+    }
+
+    .hero-alojamientos-portada h1 {
+        max-width: 1124px;
+        margin: 0 auto;
+        position: relative;
+        top: 50%;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, .43);
+        font-size: 3em;
+        padding: 0 0 0 30px
+    }
+
+    .hero-alojamientos-datos {
+        height: 25vh;
+        background-color: #30664E
+    }
+
+    .hero-alojamientos-datos div {
+        max-width: 1124px;
+        margin: 0 auto;
+        height: 25vh;
+        background-color: #30664E;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 0 30px
+    }
+
+    .hero-alojamientos-datos div h2:nth-of-type(1) {
+        font-weight: 300;
+        border-right: 1px solid white;
+        margin: 0;
+        padding: 3% 10% 3% 0
+    }
+
+    .hero-alojamientos-datos div h2:nth-of-type(1),
+    .hero-alojamientos-datos div h2:nth-of-type(2),
+    .hero-alojamientos-datos div h2:nth-of-type(3),
+    .hero-alojamientos-datos div h2:nth-of-type(4) {
+        font-size: 2.5em
+    }
+
+    .hero-alojamientos-datos div h2:nth-of-type(2) span,
+    .hero-alojamientos-datos div h2:nth-of-type(3) span,
+    .hero-alojamientos-datos div h2:nth-of-type(4) span {
+        font-size: 15px;
+        font-weight: 300
+    }
+
+    .alojamientos-santa-rosa-de-calamuchita {
+        display: grid;
+        grid-template-columns: .6fr 1.4fr;
+        max-width: 1124px;
+        margin: 0 auto 100px;
+        grid-gap: 60px
+    }
+
+    @media screen and (max-width:1024px) {
+        .header {
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center
+        }
+
+        .logotipo {
+            margin: 0
+        }
+
+        .menu {
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, .8);
+            z-index: 1;
+            display: none
+        }
+
+        .menu ul {
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            margin: 0;
+            padding: 0
+        }
+
+        .menu ul li {
+            border-right: none;
+            border-bottom: 1px solid white;
+            width: 60%;
+            text-align: center;
+            padding: 35px
+        }
+
+        .menu ul li #search {
+            border-top-right-radius: 42px;
+            border-bottom-right-radius: 42px;
+            padding: 20px 60px
+        }
+
+        .menu ul li #search,
+        .menu ul li #submit {
+            margin: 10px;
+            text-align: center
+        }
+
+        .menu ul li:first-child {
+            display: inline-block
+        }
+
+        #burguer-button {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            position: fixed;
+            bottom: 5%;
+            right: 5%;
+            width: 50px;
+            height: 50px;
+            background-color: #30664E;
+            font-size: 20px;
+            border-radius: 50%;
+            z-index: 2;
+            border: 1px solid rgba(255, 255, 255, .4)
+        }
+    }
+
+    @media screen and (max-width:769px) {
+
+        .hero-alojamientos,
+        .hero-alojamientos-datos {
+            height: auto;
+            text-align: center
+        }
+
+        .hero-alojamientos-datos div {
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            height: auto;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center
+        }
+
+        .hero-alojamientos-datos div h2:nth-of-type(1) {
+            border: 0;
+            padding: 50px 10px
+        }
+
+        .alojamientos-santa-rosa-de-calamuchita {
+            padding: 30px
+        }
+    }
+
+    @media screen and (max-width:500px) {
+        .menu ul li {
+            padding: 20px;
+            width: 100%
+        }
+
+        .menu ul li #search {
+            margin: 5px;
+            padding: 20px 14px
+        }
+
+        .menu ul li #submit {
+            padding: 20px 30px
+        }
+
+        .hero-alojamientos-portada h1 {
+            font-size: 2.3em
+        }
+    }
+</style>
+</head>
+
+<body>
+    <section class="header-container">
+        <header class="header">
+            <figure class="logotipo">
+                <a href="../index.html">
+                    <img src="../images/logotipo.png" alt="Logotipo Calamuchita" srcset="" width="200">
+                </a>
+            </figure>
+            <span class="burguer-button icon-menu" id="burguer-button"></span>
+            <nav class="menu" id="menu">
+                <ul>
+                    <li>
+                        <form action="">
+                            <div class="formulario-header">
+                                <input type="search" name="search" id="search" placeholder="¿Dónde vamos?">
+                                <input type="submit" value="Buscar" id="submit">
+                            </div>
+                        </form>
+                    </li>
+                    <li>
+                        <a href="localidades.html">Localidades</a>
+                    </li>
+                    <li>
+                        <a href="alojamientos.html">Alojamientos</a>
+                    </li>
+                    <li>
+                        <a href="actividades.html">Excursiones</a>
+                    </li>
+                    <li>
+                        <a href="gastronomia.html">Gastronomía</a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="icon-facebook"></i>
+                        </a>
+                        <a href="">
+                            <i class="icon-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+    <section class="hero-alojamientos">
+        <div class="hero-alojamientos-portada">
+            <h1>Santa Rosa <br> de Calamuchita</h1>
+        </div>
+        <div class="hero-alojamientos-datos">
+            <div>
+                <h2>Gastronomía</h2>
+                <h2>40 <br><span>Aceptan Mascota</span></h2>
+                <h2>30 <br><span>Desayuno incluido</span></h2>
+                <h2>10k <br><span>Recomendaciones</span></h2>
+            </div>
+        </div>
+    </section>
+    <main class="alojamientos-santa-rosa-de-calamuchita">
+        <div class="breadcrumbs">
+            <a href="../index.html">Inicio </a>
+            <a href="localidades.html"> Santa Rosa de Calamuchita </a>
+            <a href="alojamientos.html"> Alojamientos </a>
+        </div>
+        <div class="filtro">
+            <div>
+                <h3>Tipo de Alojamiento</h3>
+                <label for="buscadas">
+                    <input type="checkbox" name="buscadas" id="buscadas"> Más Buscadas
+                </label>
+                <label for="destacadas">
+                    <input type="checkbox" name="destacadas" id="destacadas"> Destacadas
+                </label>
+                <label for="estrellas">
+                    <input type="checkbox" name="estrellas" id="estrellas"> 5 estrellas
+                </label>
+            </div>
+            <div>
+                <h3>Tipo de Alojamiento</h3>
+                <label for="hoteles">
+                    <input type="checkbox" name="hoteles" id="hoteles"> Hoteles
+                </label>
+                <label for="hostels">
+                    <input type="checkbox" name="hostels" id="hostels"> Hostels
+                </label>
+                <label for="aparts">
+                    <input type="checkbox" name="aparts" id="aparts"> Aparts
+                </label>
+                <label for="hoteles">
+                    <input type="checkbox" name="hoteles" id="hoteles"> Hoteles
+                </label>
+                <label for="cabanas">
+                    <input type="checkbox" name="cabanas" id="cabanas"> Cabañas
+                </label>
+                <label for="hosterias">
+                    <input type="checkbox" name="hosterias" id="hosterias"> Hosterías
+                </label>
+                <label for="posadas">
+                    <input type="checkbox" name="posadas" id="posadas"> Posadas
+                </label>
+                <label for="campings">
+                    <input type="checkbox" name="campings" id="campings"> Campings
+                </label>
+                <label for="casas">
+                    <input type="checkbox" name="casas" id="casas"> Casas
+                </label>
+                <label for="departamentos">
+                    <input type="checkbox" name="departamentos" id="departamentos"> Departamentos
+                </label>
+                <label for="estancias">
+                    <input type="checkbox" name="estancias" id="estancias"> Estancias
+                </label>
+            </div>
+            <div>
+                <h3>Servicios</h3>
+                <label for="wifi">
+                    <input type="checkbox" name="wifi" id="wifi"> Wi-Fi
+                </label>
+                <label for="mascotas">
+                    <input type="checkbox" name="mascotas" id="mascotas"> Mascotas
+                </label>
+                <label for="desayuno">
+                    <input type="checkbox" name="desayuno" id="desayuno"> Desayuno
+                </label>
+                <label for="pileta">
+                    <input type="checkbox" name="pileta" id="pileta"> Pileta
+                </label>
+                <label for="mascotas">
+                    <input type="checkbox" name="mascotas" id="mascotas"> Mascotas
+                </label>
+                <label for="multiples">
+                    <input type="checkbox" name="multiples" id="multiples"> Salón de usos múltiples
+                </label>
+                <label for="checkout">
+                    <input type="checkbox" name="checkout" id="checkout"> Check out: 11:00 h
+                </label>
+                <label for="checkin">
+                    <input type="checkbox" name="checkin" id="checkin"> Check in: 14:00 h
+                </label>
+                <label for="estacionamiento">
+                    <input type="checkbox" name="estacionamiento" id="estacionamiento"> Estacionamiento gratis
+                </label>
+                <label for="parrilla">
+                    <input type="checkbox" name="parrilla" id="parrilla"> Parrilla individual
+                </label>
+                <label for="ducha">
+                    <input type="checkbox" name="ducha" id="ducha"> Ducha / Bañera
+                </label>
+                <label for="calefaccion">
+                    <input type="checkbox" name="calefaccion" id="calefaccion"> Calefacción
+                </label>
+                <label for="mucama">
+                    <input type="checkbox" name="mucama" id="mucama"> Servicio de Mucama
+                </label>
+                <label for="directvtv">
+                    <input type="checkbox" name="directvtv" id="directvtv"> DirecTVTV por Cable
+                </label>
+                <label for="recepcion">
+                    <input type="checkbox" name="recepcion" id="recepcion"> Recepción las 24 Hs
+                </label>
+            </div>
+            <div>
+                <h3>Precios</h3>
+                <div class="people">
+                    <label for="people">Cantidad de personas
+                        <input type="number" name="" id="people" value="2" min="1" max="20">
+                    </label>
+                </div>
+            </div>
+            <div>
+                <h3>Precios</h3>
+                <label for="range">
+                    <input type="range" list="rangemarks" min="900" max="8000" id="range">
+                </label>
+            </div>
+            <div>
+                <h3>Alternativas de pago</h3>
+                <label for="todas">
+                    <input type="checkbox" name="todas" id="todas"> Todas las formas
+                </label>
+                <label for="alojamiento">
+                    <input type="checkbox" name="alojamiento" id="alojamiento"> Paga al alojamiento
+                </label>
+                <label for="cuotas">
+                    <input type="checkbox" name="cuotas" id="cuotas"> En cuotas
+                </label>
+                <label for="pago">
+                    <input type="checkbox" name="pago" id="pago"> En un solo pago
+                </label>
+            </div>
+            <div>
+                <h3>Buscar en el mapa</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.6859370019106!2d-64.17746668489687!3d-31.42277798140197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2971222637b%3A0xe981317ad406c172!2sTerminal+de+%C3%93mnibus+de+C%C3%B3rdoba%2C+C%C3%B3rdoba%2C+Argentina!5e0!3m2!1ses!2ses!4v1549068104767"
+                    width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="alojamientos-destacados">
+            <div class="alojamientos-destacados-items">
+                <div class="imagen">
+                    <p>Alojamiento Destacado</p>
+                </div>
+                <div class="texto">
+                    <a href="alojamiento-adentro.html">
+                        <h2>Cabañas y Apart Verde y Blanco</h2>
+                    </a>
+                    <p>Cabañas</p>
+                    <p>Santa Rosa de Calamuchita, Córdoba</p>
+                    <p>Desayuno incluido - Estacionamiento gratuito</p>
+                </div>
+            </div>
+            <div class="alojamientos-destacados-items">
+                <div class="imagen">
+                    <p>Alojamiento Destacado</p>
+                </div>
+                <div class="texto">
+                    <a href="alojamiento-adentro.html">
+                        <h2>Cabañas Ensueño Dorado</h2>
+                    </a>
+                    <p>Cabañas</p>
+                    <p>RP5, X5196 Santa Rosa de Calamuchita, Córdoba</p>
+                    <p>Desayuno incluido - Apto para animales - Late Check Out</p>
+                </div>
+            </div>
+            <div class="alojamientos-destacados-items">
+                <div class="imagen">
+                    <p>Alojamiento Destacado</p>
+                </div>
+                <div class="texto">
+                    <a href="alojamiento-adentro.html">
+                        <h2>Cabañas Kalahuasi Santa Rosa</h2>
+                    </a>
+                    <p>Cabañas</p>
+                    <p>El Durazno El Durazno, X5197, Córdoba</p>
+                    <p>Desayuno incluido - Pileta - Wifi - Late Check Out</p>
+                </div>
+            </div>
+            <div class="alojamientos-destacados-items">
+                <a href="">
+                    <img src="../images/pakcs-09.png" data-src="../images/pakcs-09.png" alt="Texto Alternativo" width="100%">
+                </a>
+            </div>
+            <div class="alojamientos-destacados-items">
+                <div class="imagen">
+                </div>
+                <div class="texto">
+                    <a href="alojamiento-adentro.html">
+                        <h2>Complejo Urqu Qhawarina</h2>
+                    </a>
+                    <p>Cabañas</p>
+                    <p>Mariano Moreno, Santa Rosa de Calamuchita, Córdoba</p>
+                </div>
+            </div>
+            <div class="alojamientos-destacados-items">
+                <div class="imagen">
+                </div>
+                <div class="texto">
+                    <a href="alojamiento-adentro.html">
+                        <h2>Cabañas Ranger</h2>
+                    </a>
+                    <p>Cabañas</p>
+                    <p>Olmos, Córdoba Santa Rosa de Calamuchita</p>
+                </div>
+            </div>
+            <div class="alojamientos-destacados-items">
+                <div class="imagen">
+                </div>
+                <div class="texto">
+                    <a href="alojamiento-adentro.html">
+                        <h2>Cabañas Namasté Santa Rosa</h2>
+                    </a>
+                    <p>Cabañas</p>
+                    <p>Av. Siete Colores, Las Acequias, X5196 Santa Rosa de Calamuchita, Córdoba</p>
+                </div>
+            </div>
+            <div class="alojamientos-destacados-items">
+                <div class="imagen">
+                </div>
+                <div class="texto">
+                    <a href="alojamiento-adentro.html">
+                        <h2>Cabaña Los Aguiluchos</h2>
+                    </a>
+                    <p>Cabañas</p>
+                    <p>Los Aguiluchos 215</p>
+                </div>
+            </div>
+            <div class="alojamientos-destacados-items">
+                <div class="imagen">
+                </div>
+                <div class="texto">
+                    <a href="alojamiento-adentro.html">
+                        <h2>Terrazas Del Cerro Cabañas</h2>
+                    </a>
+                    <p>Cabañas</p>
+                    <p>Santa Rosa de Calamuchita, Córdoba</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="texto-seo">
+        <h2>Más Calamuchita</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nemo veniam voluptatem explicabo
+            officiis a dolore deserunt suscipit deleniti unde inventore, consequatur praesentium doloribus id
+            asperiores dolores natus ex quibusdam?. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+            laborum, deleniti tenetur quis, quisquam facilis dolor magni et ullam sapiente reprehenderit harum aliquam
+            error amet nesciunt saepe impedit assumenda maxime.</p>
+    </section>
+    <footer class="footer-container">
+        <div class="footer">
+            <div class="footer-item">
+                <h4>Más Calamuchita</h4>
+                <a href="">Quiénes somos</a>
+                <a href="">Localidades</a>
+                <a href="">Alojamientos</a>
+                <a href="">Excursiones</a>
+                <a href="">Gastronomia</a>
+            </div>
+            <div class="footer-item">
+                <h4>Soporte</h4>
+                <a href="">Preguntas frecuentes</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="footer-item">
+                <h4>Redes</h4>
+                <a href=""><i class="icon-facebook"></i></a>
+                <a href=""><i class="icon-instagram"></i></a>
+            </div>
+            <div class="footer-item">
+                <h4>Soporte</h4>
+                <a href="contacto.html">Quiénes somos?</a>
+                <a href="contacto.html">Para conocer más a cerca de MásCalamuchita o para despejar dudas
+                    contáctese con nosotros:</a>
+                <a href="mailto:info@mascalamuchita.com.ar">info@mascalamuchita.com.ar</a>
+            </div>
+        </div>
+    </footer>
+    <section class="footer-final">
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+    <script>
+        var consulta = window.matchMedia('(max-width: 1024px)');
+        consulta.addListener(mediaQuery);
+
+        var $burguerButton = document.getElementById("burguer-button");
+        var $menu = document.getElementById("menu");
+
+        function toggleMenu() {
+            $menu.classList.toggle('active');
+            $burguerButton.classList.toggle('icon-salir');
+            console.log("ok");
+        }
+
+        function showMenu() {
+            $menu.classList.add('active');
+            $burguerButton.classList.add('icon-salir');
+        }
+
+        function hideMenu() {
+            $menu.classList.remove('active');
+            $burguerButton.classList.remove('icon-salir');
+        }
+
+        function mediaQuery() {
+            if (consulta.matches) {
+                $burguerButton.addEventListener('touchstart', toggleMenu);
+
+            } else {
+                $burguerButton.removeEventListener('touchstart', toggleMenu);
+            }
+        }
+
+        mediaQuery();
+
+        // Lazy loading
+
+        var bLazy = new Blazy({
+            selector: 'img'
+        });
+
+        // gestos
+
+        var $body = document.body;
+
+        var gestos = new Hammer($body);
+
+        gestos.on('swipeleft', showMenu);
+        gestos.on('swiperight', hideMenu);
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/styles.min.css">
+</body>
+
+</html>
