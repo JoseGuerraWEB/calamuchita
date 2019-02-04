@@ -741,10 +741,6 @@ a {
     font-weight: 700;
 }
 
-.santa-rosa-de-calamuchita div:nth-of-type(1) a:first-child::after {
-    content: ">";
-}
-
 .santa-rosa-de-calamuchita div:nth-of-type(2) {
     grid-column: 1 / span 1;
 }
@@ -1041,16 +1037,12 @@ body>main>div.filtro>div:nth-child(6)>label {
     font-weight: 700;
 }
 
-.breadcrumbs a:nth-of-type(1)::after {
+.breadcrumbs a::after {
     content: ">";
 }
 
-.breadcrumbs a:nth-of-type(2)::after {
-    content: ">";
-}
-
-.breadcrumbs a:nth-of-type(3)::after {
-    content: ">";
+.breadcrumbs a:last-child::after {
+    display: none;
 }
 
 .alojamientos-destacados-items,
