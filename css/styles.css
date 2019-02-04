@@ -1574,6 +1574,7 @@ body>main>div.alojamientos-destacados>div:nth-child(10)>div.texto>a>h2 {
 
     .actividades-slider {
         grid-gap: 10px;
+        height: auto;
     }
 
     .actividades-slider>* {
