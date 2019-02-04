@@ -1033,7 +1033,7 @@ body>main>div.filtro>div:nth-child(6)>label {
 .breadcrumbs a {
     display: inline-block;
     color: #30664E;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .breadcrumbs a::after {
