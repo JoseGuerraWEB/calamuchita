@@ -168,7 +168,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 75px;
     color: white;
     max-width: 1366px;
     margin: 0 auto;
@@ -205,10 +205,10 @@ a {
 
 .menu ul li {
     list-style: none;
-    padding: 20px 0 20px 20px;
+    padding: 15px 0 15px 20px;
     border-right: 1px solid;
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .menu li:last-child {
@@ -1420,7 +1420,6 @@ body>main>div.alojamientos-destacados>div:nth-child(10)>div.texto>a>h2 {
 @media screen and (max-width: 1024px) {
     .header {
         justify-content: center;
-        height: 75px;
     }
 
     .logotipo {
