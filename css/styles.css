@@ -1540,6 +1540,14 @@ body>main>div.alojamientos-destacados>div:nth-child(10)>div.texto>a>h2 {
         grid-column: 1 / span 3;
         text-align: center;
     }
+
+    .actividades-slider {
+        grid-gap: 10px;
+    }
+
+    .actividades-slider > * {
+        grid-column: 1 / span 4;
+    }
 }
 
 @media screen and (max-width:768px) {
