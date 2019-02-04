@@ -735,7 +735,7 @@ a {
     margin: 0 auto;
     grid-template-columns: .75fr 1.25fr;
     grid-gap: 60px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .santa-rosa-de-calamuchita div:nth-of-type(1) {
@@ -783,7 +783,7 @@ a {
 .ideas-container {
     background-color: #F5F4F5;
     height: 300px;
-    padding: 75px 0;
+    padding: 50px 0;
 }
 
 .ideas {
@@ -947,7 +947,7 @@ a {
     display: grid;
     grid-template-columns: .6fr 1.4fr;
     max-width: 1124px;
-    margin: 0 auto 100px;
+    margin: 0 auto;
     grid-gap: 60px;
 }
 
@@ -1177,16 +1177,10 @@ body>main>div.filtro>div:nth-child(6)>label {
     color: #666666;
 }
 
-.texto-seo {
-    text-align: center;
-    padding: 30px;
-}
-
 .texto-seo,
 .actividades-texto-seo {
     max-width: 1124px;
-    margin: 100px auto;
-    padding: 30px;
+    margin: 50px auto;
     text-align: center;
 }
 
