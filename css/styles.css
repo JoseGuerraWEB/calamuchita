@@ -1036,6 +1036,10 @@ body>main>div.filtro>div:nth-child(6)>label {
     font-weight: 400;
 }
 
+.actividades-vuelta-por-el-pueblo .breadcrumbs {
+    margin: 0;
+}
+
 .breadcrumbs a::after {
     content: ">";
 }
