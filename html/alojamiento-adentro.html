@@ -75,7 +75,7 @@
             </div>
             <div class="imagen">
                 <p>Alojamiento Destacado</p>
-                <img src="https://lorempixel.com/1920/1080/people" alt="" width="100%">
+                <img src="https://lorempixel.com/1920/1080/people" alt="Texto Alternativo" width="100%">
             </div>
             <div class="texto">
                 <a href="alojamiento-adentro.html">
@@ -94,15 +94,15 @@
     </main>
     <section class="alojamiento-consulta">
         <div class="alojamiento-consulta-imagenes">
-            <img src="http://lorempixel.com/640/480/nightlife" alt="" width="100%">
-            <img src="http://lorempixel.com/640/480/nightlife" alt="" width="100%">
-            <img src="http://lorempixel.com/640/480/nightlife" alt="" width="100%">
-            <img src="http://lorempixel.com/640/480/nightlife" alt="" width="100%">
-            <img src="http://lorempixel.com/640/480/nightlife" alt="" width="100%">
-            <img src="http://lorempixel.com/640/480/nightlife" alt="" width="100%">
-            <img src="http://lorempixel.com/640/480/nightlife" alt="" width="100%">
-            <img src="http://lorempixel.com/640/480/nightlife" alt="" width="100%">
-            <img src="http://lorempixel.com/640/480/nightlife" alt="" width="100%">
+            <img src="http://lorempixel.com/640/480/nightlife" alt="Texto Alternativo" width="100%">
+            <img src="http://lorempixel.com/640/480/nightlife" alt="Texto Alternativo" width="100%">
+            <img src="http://lorempixel.com/640/480/nightlife" alt="Texto Alternativo" width="100%">
+            <img src="http://lorempixel.com/640/480/nightlife" alt="Texto Alternativo" width="100%">
+            <img src="http://lorempixel.com/640/480/nightlife" alt="Texto Alternativo" width="100%">
+            <img src="http://lorempixel.com/640/480/nightlife" alt="Texto Alternativo" width="100%">
+            <img src="http://lorempixel.com/640/480/nightlife" alt="Texto Alternativo" width="100%">
+            <img src="http://lorempixel.com/640/480/nightlife" alt="Texto Alternativo" width="100%">
+            <img src="http://lorempixel.com/640/480/nightlife" alt="Texto Alternativo" width="100%">
         </div>
         <form action="" class="alojamiento-consulta-formulario">
             <p>Lo que escriba aquí, le llegará directamente a Cabañas y Aparte Verde y Blanco</p>
@@ -225,6 +225,7 @@
     <section class="footer-final">
     </section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
 <script>
     var consulta = window.matchMedia('(max-width: 1024px)');
     consulta.addListener(mediaQuery);
@@ -258,6 +259,12 @@
     }
 
     mediaQuery();
+
+    // Lazy loading
+
+    var bLazy = new Blazy({
+        selector: 'img'
+    });
 
     // gestos
 

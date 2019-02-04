@@ -75,7 +75,7 @@
             </div>
             <div class="imagen">
                 <p>Actividad Destacada</p>
-                <img src="https://lorempixel.com/1920/1080/people" alt="" width="100%">
+                <img src="https://lorempixel.com/1920/1080/people" alt="Texto Alternativo" width="100%">
             </div>
             <div class="texto">
                 <a href="actividades-adentro.html">
@@ -91,10 +91,10 @@
         </div>
     </main>
     <section class="actividades-slider">
-        <img src="https://lorempixel.com/1920/1080/people" alt="" width="100%">
-        <img src="https://lorempixel.com/1920/1080/people" alt="" width="100%">
-        <img src="https://lorempixel.com/1920/1080/people" alt="" width="100%">
-        <img src="https://lorempixel.com/1920/1080/people" alt="" width="100%">
+        <img src="https://lorempixel.com/1920/1080/people" alt="Texto Alternativo" width="100%">
+        <img src="https://lorempixel.com/1920/1080/people" alt="Texto Alternativo" width="100%">
+        <img src="https://lorempixel.com/1920/1080/people" alt="Texto Alternativo" width="100%">
+        <img src="https://lorempixel.com/1920/1080/people" alt="Texto Alternativo" width="100%">
     </section>
     <section class="actividades-dentro-texto-seo-container">
         <div class="actividades-dentro-texto-seo">
@@ -140,7 +140,7 @@
         <div class="actividades-recomendadas">
             <h2>Otras actividades que pueden interesarte</h2>
             <div>
-                <img src="https://lorempixel.com/1920/1080/people" alt="" srcset="" width="100%">
+                <img src="https://lorempixel.com/1920/1080/people" alt="Texto Alternativo" srcset="" width="100%">
                 <div>
                     <h3>La Fiesta de la Cerveza</h3>
                     <p>
@@ -160,7 +160,7 @@
                 </div>
             </div>
             <div>
-                <img src="https://lorempixel.com/1920/1080/people" alt="" srcset="" width="100%">
+                <img src="https://lorempixel.com/1920/1080/people" alt="Texto Alternativo" srcset="" width="100%">
                 <div>
                     <h3>Catedral Santa Rosa de Lima</h3>
                     <p>
@@ -179,7 +179,7 @@
                 </div>
             </div>
             <div>
-                <img src="https://lorempixel.com/1920/1080/people" alt="" srcset="" width="100%">
+                <img src="https://lorempixel.com/1920/1080/people" alt="Texto Alternativo" srcset="" width="100%">
                 <div>
                     <h3>Reserva Natural La Cascada</h3>
                     <p>
@@ -230,50 +230,57 @@
     </footer>
     <section class="footer-final">
     </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
-    <script>
-        var consulta = window.matchMedia('(max-width: 1024px)');
-        consulta.addListener(mediaQuery);
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+<script>
+    var consulta = window.matchMedia('(max-width: 1024px)');
+    consulta.addListener(mediaQuery);
 
-        var $burguerButton = document.getElementById("burguer-button");
-        var $menu = document.getElementById("menu");
+    var $burguerButton = document.getElementById("burguer-button");
+    var $menu = document.getElementById("menu");
 
-        function toggleMenu() {
-            $menu.classList.toggle('active');
-            $burguerButton.classList.toggle('icon-salir');
-            console.log("ok");
+    function toggleMenu() {
+        $menu.classList.toggle('active');
+        $burguerButton.classList.toggle('icon-salir');
+        console.log("ok");
+    }
+
+    function showMenu() {
+        $menu.classList.add('active');
+        $burguerButton.classList.add('icon-salir');
+    }
+
+    function hideMenu() {
+        $menu.classList.remove('active');
+        $burguerButton.classList.remove('icon-salir');
+    }
+
+    function mediaQuery() {
+        if (consulta.matches) {
+            $burguerButton.addEventListener('touchstart', toggleMenu);
+
+        } else {
+            $burguerButton.removeEventListener('touchstart', toggleMenu);
         }
+    }
 
-        function showMenu() {
-            $menu.classList.add('active');
-            $burguerButton.classList.add('icon-salir');
-        }
+    mediaQuery();
 
-        function hideMenu() {
-            $menu.classList.remove('active');
-            $burguerButton.classList.remove('icon-salir');
-        }
+    // Lazy loading
 
-        function mediaQuery() {
-            if (consulta.matches) {
-                $burguerButton.addEventListener('touchstart', toggleMenu);
+    var bLazy = new Blazy({
+        selector: 'img'
+    });
 
-            } else {
-                $burguerButton.removeEventListener('touchstart', toggleMenu);
-            }
-        }
+    // gestos
 
-        mediaQuery();
+    var $body = document.body;
 
-        // gestos
+    var gestos = new Hammer($body);
 
-        var $body = document.body;
-
-        var gestos = new Hammer($body);
-
-        gestos.on('swipeleft', showMenu);
-        gestos.on('swiperight', hideMenu);
-    </script>
+    gestos.on('swipeleft', showMenu);
+    gestos.on('swiperight', hideMenu);
+</script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/styles.css">
