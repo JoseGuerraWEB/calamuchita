@@ -75,7 +75,8 @@
             </div>
             <div class="imagen">
                 <p>Alojamiento Destacado</p>
-                <img src="https://lorempixel.com/1920/1080/people" alt="Texto Alternativo" width="100%">
+                <img src="https://lorempixel.com/1920/1080/people" data-src="https://lorempixel.com/1920/1080/people"
+                    alt="Texto Alternativo" width="100%">
             </div>
             <div class="texto">
                 <a href="alojamiento-adentro.html">
@@ -94,15 +95,24 @@
     </main>
     <section class="alojamiento-consulta">
         <div class="alojamiento-consulta-imagenes">
-            <img src="http://lorempixel.com/640/480/nightlife" alt="Texto Alternativo" width="100%">
-            <img src="http://lorempixel.com/640/480/nightlife" alt="Texto Alternativo" width="100%">
-            <img src="http://lorempixel.com/640/480/nightlife" alt="Texto Alternativo" width="100%">
-            <img src="http://lorempixel.com/640/480/nightlife" alt="Texto Alternativo" width="100%">
-            <img src="http://lorempixel.com/640/480/nightlife" alt="Texto Alternativo" width="100%">
-            <img src="http://lorempixel.com/640/480/nightlife" alt="Texto Alternativo" width="100%">
-            <img src="http://lorempixel.com/640/480/nightlife" alt="Texto Alternativo" width="100%">
-            <img src="http://lorempixel.com/640/480/nightlife" alt="Texto Alternativo" width="100%">
-            <img src="http://lorempixel.com/640/480/nightlife" alt="Texto Alternativo" width="100%">
+            <img src="http://lorempixel.com/640/480/nightlife" data-src="https://lorempixel.com/640/480/people" alt="Texto Alternativo"
+                width="100%">
+            <img src="http://lorempixel.com/640/480/nightlife" data-src="https://lorempixel.com/640/480/people" alt="Texto Alternativo"
+                width="100%">
+            <img src="http://lorempixel.com/640/480/nightlife" data-src="https://lorempixel.com/640/480/people" alt="Texto Alternativo"
+                width="100%">
+            <img src="http://lorempixel.com/640/480/nightlife" data-src="https://lorempixel.com/640/480/people" alt="Texto Alternativo"
+                width="100%">
+            <img src="http://lorempixel.com/640/480/nightlife" data-src="https://lorempixel.com/640/480/people" alt="Texto Alternativo"
+                width="100%">
+            <img src="http://lorempixel.com/640/480/nightlife" data-src="https://lorempixel.com/640/480/people" alt="Texto Alternativo"
+                width="100%">
+            <img src="http://lorempixel.com/640/480/nightlife" data-src="https://lorempixel.com/640/480/people" alt="Texto Alternativo"
+                width="100%">
+            <img src="http://lorempixel.com/640/480/nightlife" data-src="https://lorempixel.com/640/480/people" alt="Texto Alternativo"
+                width="100%">
+            <img src="http://lorempixel.com/640/480/nightlife" data-src="https://lorempixel.com/640/480/people" alt="Texto Alternativo"
+                width="100%">
         </div>
         <form action="" class="alojamiento-consulta-formulario">
             <p>Lo que escriba aquí, le llegará directamente a Cabañas y Aparte Verde y Blanco</p>
@@ -224,57 +234,57 @@
     </footer>
     <section class="footer-final">
     </section>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
-<script>
-    var consulta = window.matchMedia('(max-width: 1024px)');
-    consulta.addListener(mediaQuery);
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+    <script>
+        var consulta = window.matchMedia('(max-width: 1024px)');
+        consulta.addListener(mediaQuery);
 
-    var $burguerButton = document.getElementById("burguer-button");
-    var $menu = document.getElementById("menu");
+        var $burguerButton = document.getElementById("burguer-button");
+        var $menu = document.getElementById("menu");
 
-    function toggleMenu() {
-        $menu.classList.toggle('active');
-        $burguerButton.classList.toggle('icon-salir');
-        console.log("ok");
-    }
-
-    function showMenu() {
-        $menu.classList.add('active');
-        $burguerButton.classList.add('icon-salir');
-    }
-
-    function hideMenu() {
-        $menu.classList.remove('active');
-        $burguerButton.classList.remove('icon-salir');
-    }
-
-    function mediaQuery() {
-        if (consulta.matches) {
-            $burguerButton.addEventListener('touchstart', toggleMenu);
-
-        } else {
-            $burguerButton.removeEventListener('touchstart', toggleMenu);
+        function toggleMenu() {
+            $menu.classList.toggle('active');
+            $burguerButton.classList.toggle('icon-salir');
+            console.log("ok");
         }
-    }
 
-    mediaQuery();
+        function showMenu() {
+            $menu.classList.add('active');
+            $burguerButton.classList.add('icon-salir');
+        }
 
-    // Lazy loading
+        function hideMenu() {
+            $menu.classList.remove('active');
+            $burguerButton.classList.remove('icon-salir');
+        }
 
-    var bLazy = new Blazy({
-        selector: 'img'
-    });
+        function mediaQuery() {
+            if (consulta.matches) {
+                $burguerButton.addEventListener('touchstart', toggleMenu);
 
-    // gestos
+            } else {
+                $burguerButton.removeEventListener('touchstart', toggleMenu);
+            }
+        }
 
-    var $body = document.body;
+        mediaQuery();
 
-    var gestos = new Hammer($body);
+        // Lazy loading
 
-    gestos.on('swipeleft', showMenu);
-    gestos.on('swiperight', hideMenu);
-</script>
+        var bLazy = new Blazy({
+            selector: 'img'
+        });
+
+        // gestos
+
+        var $body = document.body;
+
+        var gestos = new Hammer($body);
+
+        gestos.on('swipeleft', showMenu);
+        gestos.on('swiperight', hideMenu);
+    </script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/styles.css">
