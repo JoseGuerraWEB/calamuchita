@@ -1400,7 +1400,7 @@ body>main>div.alojamientos-destacados>div:nth-child(10)>div.texto>a>h2 {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
     grid-gap: 10px;
-    height: 500px;
+    height: 250px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
