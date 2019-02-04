@@ -66,6 +66,11 @@
         </div>
     </section>
     <main class="actividades-santa-rosa-de-calamuchita">
+        <div class="breadcrumbs">
+            <a href="../index.html">Inicio </a>
+            <a href="localidades.html"> Santa Rosa de Calamuchita </a>
+            <a href="actividades.html"> Actividades </a>
+        </div>
         <div class="filtro">
             <div>
                 <h3>Tipo de Actividad</h3>
@@ -112,11 +117,6 @@
             </div>
         </div>
         <div class="actividades-destacados">
-            <div class="breadcrumbs">
-                <a href="../index.html">Inicio </a>
-                <a href="localidades.html"> Santa Rosa de Calamuchita </a>
-                <a href="actividades.html"> Actividades </a>
-            </div>
             <div class="actividades-destacados-items">
                 <div class="imagen">
                     <p>Actividad Destacada</p>
@@ -289,57 +289,57 @@
     </footer>
     <section class="footer-final">
     </section>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
-<script>
-    var consulta = window.matchMedia('(max-width: 1024px)');
-    consulta.addListener(mediaQuery);
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+    <script>
+        var consulta = window.matchMedia('(max-width: 1024px)');
+        consulta.addListener(mediaQuery);
 
-    var $burguerButton = document.getElementById("burguer-button");
-    var $menu = document.getElementById("menu");
+        var $burguerButton = document.getElementById("burguer-button");
+        var $menu = document.getElementById("menu");
 
-    function toggleMenu() {
-        $menu.classList.toggle('active');
-        $burguerButton.classList.toggle('icon-salir');
-        console.log("ok");
-    }
-
-    function showMenu() {
-        $menu.classList.add('active');
-        $burguerButton.classList.add('icon-salir');
-    }
-
-    function hideMenu() {
-        $menu.classList.remove('active');
-        $burguerButton.classList.remove('icon-salir');
-    }
-
-    function mediaQuery() {
-        if (consulta.matches) {
-            $burguerButton.addEventListener('touchstart', toggleMenu);
-
-        } else {
-            $burguerButton.removeEventListener('touchstart', toggleMenu);
+        function toggleMenu() {
+            $menu.classList.toggle('active');
+            $burguerButton.classList.toggle('icon-salir');
+            console.log("ok");
         }
-    }
 
-    mediaQuery();
+        function showMenu() {
+            $menu.classList.add('active');
+            $burguerButton.classList.add('icon-salir');
+        }
 
-    // Lazy loading
+        function hideMenu() {
+            $menu.classList.remove('active');
+            $burguerButton.classList.remove('icon-salir');
+        }
 
-    var bLazy = new Blazy({
-        selector: 'img'
-    });
+        function mediaQuery() {
+            if (consulta.matches) {
+                $burguerButton.addEventListener('touchstart', toggleMenu);
 
-    // gestos
+            } else {
+                $burguerButton.removeEventListener('touchstart', toggleMenu);
+            }
+        }
 
-    var $body = document.body;
+        mediaQuery();
 
-    var gestos = new Hammer($body);
+        // Lazy loading
 
-    gestos.on('swipeleft', showMenu);
-    gestos.on('swiperight', hideMenu);
-</script>
+        var bLazy = new Blazy({
+            selector: 'img'
+        });
+
+        // gestos
+
+        var $body = document.body;
+
+        var gestos = new Hammer($body);
+
+        gestos.on('swipeleft', showMenu);
+        gestos.on('swiperight', hideMenu);
+    </script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/styles.css">

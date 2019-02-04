@@ -654,8 +654,8 @@ a {
 }
 
 .santa-rosa-de-calamuchita div:nth-of-type(1) {
-    grid-column: 2 / span 2;
-    margin: 25px 0 75px;
+    grid-column: 1 / span 2;
+    margin: 50px 0 0;
 }
 
 .santa-rosa-de-calamuchita div:nth-of-type(1) a {
@@ -845,12 +845,10 @@ a {
 
 .alojamientos-santa-rosa-de-calamuchita .breadcrumbs {
     grid-column: 1 / span 2;
-    text-align: center;
 }
 
 .filtro {
     grid-column: 1 / span 1;
-    margin-top: 50px;
 }
 
 
@@ -914,8 +912,12 @@ a {
     grid-column: 2 / span 1;
 }
 
+.actividades-santa-rosa-de-calamuchita .breadcrumbs {
+    grid-column: 1 / span 2;
+}
+
 .breadcrumbs {
-    margin: 50px 0;
+    margin: 50px 0 0;
 }
 
 .breadcrumbs a {
