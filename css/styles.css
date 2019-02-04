@@ -796,6 +796,16 @@ a {
     padding: 0 0 0 30px;
 }
 
+.hero-alojamientos-portada h2 {
+    max-width: 1124px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.43);
+    font-size: 3em;
+    padding: 0 0 0 30px;
+}
+
 .hero-alojamientos-datos {
     height: 25vh;
     background-color: #30664E;
