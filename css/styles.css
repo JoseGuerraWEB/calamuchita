@@ -1780,4 +1780,8 @@ body>main>div.alojamientos-destacados>div:nth-child(10)>div.texto>a>h2 {
     body>section.formulario-contacto>form>a {
         font-size: 1.3em;
     }
+
+    .santa-rosa-de-calamuchita div:nth-of-type(3) {
+        padding: 30px;
+    }
 }
