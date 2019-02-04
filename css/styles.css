@@ -995,7 +995,6 @@ body>main>div.filtro>div:nth-child(6)>label {
 
 #range {
     height: 29px;
-    width: 80%;
     -webkit-appearance: none;
     outline: none;
     cursor: pointer;
