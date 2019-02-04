@@ -1046,6 +1046,8 @@ a {
 .actividades-texto-seo {
     max-width: 1124px;
     margin: 100px auto;
+    padding: 30px;
+    text-align: center;
 }
 
 body>main>div.alojamientos-destacados>div:nth-child(6)>div.texto>a>h2,
@@ -1550,7 +1552,7 @@ body>main>div.alojamientos-destacados>div:nth-child(10)>div.texto>a>h2 {
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:769px) {
 
     .principales-destinos,
     .actividades-destacadas,
