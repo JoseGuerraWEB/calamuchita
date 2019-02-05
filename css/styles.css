@@ -948,7 +948,7 @@ a {
     grid-template-columns: .6fr 1.4fr;
     max-width: 1124px;
     margin: 0 auto;
-    grid-gap: 60px;
+    grid-gap: 50px;
 }
 
 .alojamientos-santa-rosa-de-calamuchita .breadcrumbs {
@@ -1044,7 +1044,7 @@ body>main>div.filtro>div:nth-child(6)>label {
 }
 
 .actividades-vuelta-por-el-pueblo .breadcrumbs {
-    margin: 0;
+    margin: 50px 0 0;
 }
 
 .breadcrumbs a::after {
@@ -1206,7 +1206,7 @@ body>main>div.alojamientos-destacados>div:nth-child(10)>div.texto>a>h2 {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1.25fr .75fr;
-    grid-gap: 60px;
+    grid-gap: 50px;
 }
 
 .alojamiento-cabana-y-apart div:nth-of-type(2),
