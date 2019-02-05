@@ -1285,6 +1285,11 @@ body>main>div.alojamientos-destacados>div:nth-child(10)>div.texto>a>h2 {
     grid-gap: 10px;
 }
 
+.alojamiento-consulta-imagenes img {
+    align-self: center;
+    justify-self: center;
+}
+
 .alojamiento-consulta-formulario {
     grid-column: 2 / span 1;
 }
